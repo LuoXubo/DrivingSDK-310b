@@ -2,6 +2,7 @@
 
 ## 最新消息
 
+* [May. 27, 2026]: 🚀 FlashOCC示例新增Ascend 310B推理适配说明，BEVPoolV3 forward已支持310B。
 * [Mar. 30, 2026]: 🚀 BEVFusion、Sparse4D模型支持混合精度。
 * [Mar. 30, 2026]: 🚀 SparseConv3D算子支持fp16，MSDA算子支持dim大于64。
 * [Mar. 30, 2026]: 🚀 支持GraphSoftmax、SparseInverseConv3D算子。
