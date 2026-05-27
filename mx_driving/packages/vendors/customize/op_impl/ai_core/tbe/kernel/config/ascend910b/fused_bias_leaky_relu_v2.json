@@ -1,0 +1,118 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "FusedBiasLeakyReluV2/d=0,p=0/0,2/0,2/0,2",
+        "FusedBiasLeakyReluV2/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "213f8c8dbf7c5df73347cafc6280e3f87ee17980315d0911f15aae65b8822260",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "negative_slope",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_6966dfae52d4adb493af3451dd23abc8.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "FusedBiasLeakyReluV2/d=0,p=0/1,2/1,2/1,2",
+        "FusedBiasLeakyReluV2/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "158f1c645a15338a4d6288bae68b477ab0f18529ec363e453556d81cb0b369b1",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "negative_slope",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_a364fe7265d6d3007fd25caf149dbe0f.json"
+      }
+    }
+  ]
+}

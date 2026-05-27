@@ -1,0 +1,56 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "FurthestPointSamplingWithDist/d=0,p=0/0,2/0,2/3,2",
+        "FurthestPointSamplingWithDist/d=1,p=0/0,2/0,2/3,2"
+      ],
+      "staticKey": "b321076da12b03c89223075706f8cca1f4de156b6e240cfc3a2d3fb18065fe8a",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points_dist",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "nearest_temp",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "index",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_points",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/furthest_point_sampling_with_dist/FurthestPointSamplingWithDist_1ee262a7f0ef162577d674f8c2014d56.json"
+      }
+    }
+  ]
+}

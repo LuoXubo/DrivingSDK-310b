@@ -1,0 +1,140 @@
+{
+    "binFileName": "BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 64,
+    "parameters": [],
+    "sha256": "dd56b9bdc914799b088da5f37b53bd24af5cd343301595bc227f96575add0dee",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c_0"
+        },
+        {
+            "kernelName": "BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c_1"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BEVPoolV3Grad/d=0,p=0/0,2/0,2/3,2/0,2",
+            "BEVPoolV3Grad/d=1,p=0/0,2/0,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "954726c77b77535522cda910e48e20fcc31942d4daea95c8d72ea4cccc2ab299",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "depth",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "feat",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_depth",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_feat",
+                "index": 4,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_bev",
+                "index": 5,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_depth",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grad_feat",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "with_depth",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

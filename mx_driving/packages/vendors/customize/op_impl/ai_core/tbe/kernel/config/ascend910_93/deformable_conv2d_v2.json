@@ -1,0 +1,131 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DeformableConv2dV2/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "DeformableConv2dV2/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "e599592785e6341d1d2bba6d84f19512c9fc8ac313f72263c329df616e63c832",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_output",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "kernel_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "padding",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "deformable_groups",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "modulated",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "with_bias",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/deformable_conv2d_v2/DeformableConv2dV2_a870361ddaaab971e8c099733371fe4f.json"
+      }
+    }
+  ]
+}

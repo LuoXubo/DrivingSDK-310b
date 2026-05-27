@@ -1,0 +1,93 @@
+{
+    "binFileName": "ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 208,
+    "parameters": [],
+    "sha256": "1c2a087b057ea0a17fc06c72e230282502303ae7f4b45635c6c562841ee3e03c",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1_2"
+        },
+        {
+            "kernelName": "ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1_1"
+        },
+        {
+            "kernelName": "ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1_3"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "ScatterAddGradV1/d=0,p=0/0,2/3,2/0,2",
+            "ScatterAddGradV1/d=1,p=0/0,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "ba051fdcbc1347b17405933236ef66967921aab2b2068e89bc95e4ae3b10f733",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "index",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_in",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "dim",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,71 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "Knn/d=0,p=0/0,2/0,2/0,2/3,2",
+        "Knn/d=1,p=0/0,2/0,2/0,2/3,2"
+      ],
+      "staticKey": "b53cf3ae499f6b2b0532042bb1c07c25e6b2cdc48365816735305ef9e2dd7bdf",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "xyz",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "center_xyz",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dist",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "is_from_knn",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/knn/Knn_369b12a41f848384dc51b28965a91646.json"
+      }
+    }
+  ]
+}

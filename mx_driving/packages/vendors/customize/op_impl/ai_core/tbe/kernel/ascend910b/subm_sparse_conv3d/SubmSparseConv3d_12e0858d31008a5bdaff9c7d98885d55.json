@@ -1,0 +1,142 @@
+{
+    "binFileName": "SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 144,
+    "parameters": [],
+    "sha256": "dac1d06a25d131795418e4616c65ce5bf2a678204bc1ea7c5fc8b699381d2e1f",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "SubmSparseConv3d/d=0,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2",
+            "SubmSparseConv3d/d=1,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "898d1d75ebdb9d471dd044722e479865dffd8dec3ad15d1096ff1fe8a8c05c9a",
+        "inputs": [
+            {
+                "name": "feature",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "weight",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "temp",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "feature_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices_offset",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices_pair",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "kernel_size",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "out_channel",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "outSpatialShape",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "binFileName": "SparseConv3dGrad_625e52c212cad21caff15634a83491f6",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "SparseConv3dGrad_625e52c212cad21caff15634a83491f6",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 528,
+    "parameters": [],
+    "sha256": "3410cb39074719353227c49d246424885bd5f051b1daaed0d7c23878f46dc821",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "taskRation": "1:2",
+    "kernelList": [
+        {
+            "kernelName": "SparseConv3dGrad_625e52c212cad21caff15634a83491f6_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "SparseConv3dGrad/d=0,p=0/0,2/0,2/3,2/3,2/0,2/0,2",
+            "SparseConv3dGrad/d=1,p=0/0,2/0,2/3,2/3,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "7cf729e0eb84625018327dc3126ce46e6f137a1af8e35320da86068f40cb0f0c",
+        "inputs": [
+            {
+                "name": "features",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "weight",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grad_out_features",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "former_sorted_indices",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices_offset",
+                "index": 4,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "features_grad",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "weight_grad",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "start_offset",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "end_offset",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

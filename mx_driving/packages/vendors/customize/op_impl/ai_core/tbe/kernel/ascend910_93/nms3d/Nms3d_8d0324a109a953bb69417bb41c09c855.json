@@ -1,0 +1,80 @@
+{
+    "binFileName": "Nms3d_8d0324a109a953bb69417bb41c09c855",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "Nms3d_8d0324a109a953bb69417bb41c09c855",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 40,
+    "parameters": [],
+    "sha256": "172d32fd009679d0785477d0d70413e8f91e584e557330365aa654ffb1b533f2",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "Nms3d_8d0324a109a953bb69417bb41c09c855_1"
+        },
+        {
+            "kernelName": "Nms3d_8d0324a109a953bb69417bb41c09c855_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "Nms3d/d=0,p=0/1,2/6,2",
+            "Nms3d/d=1,p=0/1,2/6,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "72708be9b1f4f5c6d235954e368f12591044c5d84c26f34454a0f9fdf001c1c6",
+        "inputs": [
+            {
+                "name": "boxes",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "mask",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "threshold",
+                "dtype": "float",
+                "value": 0.0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

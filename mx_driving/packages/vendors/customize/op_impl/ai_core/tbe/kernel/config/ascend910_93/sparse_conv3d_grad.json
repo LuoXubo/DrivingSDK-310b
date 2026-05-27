@@ -1,0 +1,198 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "SparseConv3dGrad/d=0,p=0/1,2/1,2/3,2/3,2/1,2/1,2",
+        "SparseConv3dGrad/d=1,p=0/1,2/1,2/3,2/3,2/1,2/1,2"
+      ],
+      "staticKey": "7204d014e40485d182026cf4d88a2d4c990db69a1c47f29e0404cb38d3f4c5f3",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out_features",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "former_sorted_indices",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_offset",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "features_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight_grad",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "start_offset",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "end_offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/sparse_conv3d_grad/SparseConv3dGrad_f385251341902b32355e1814cb3583aa.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "SparseConv3dGrad/d=0,p=0/0,2/0,2/3,2/3,2/0,2/0,2",
+        "SparseConv3dGrad/d=1,p=0/0,2/0,2/3,2/3,2/0,2/0,2"
+      ],
+      "staticKey": "7cf729e0eb84625018327dc3126ce46e6f137a1af8e35320da86068f40cb0f0c",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out_features",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "former_sorted_indices",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_offset",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "features_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight_grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "start_offset",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "end_offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/sparse_conv3d_grad/SparseConv3dGrad_625e52c212cad21caff15634a83491f6.json"
+      }
+    }
+  ]
+}

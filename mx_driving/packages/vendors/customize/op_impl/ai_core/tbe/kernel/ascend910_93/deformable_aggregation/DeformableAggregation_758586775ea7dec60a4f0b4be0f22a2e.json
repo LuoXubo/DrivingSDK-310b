@@ -1,0 +1,152 @@
+{
+    "binFileName": "DeformableAggregation_758586775ea7dec60a4f0b4be0f22a2e",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "DeformableAggregation_758586775ea7dec60a4f0b4be0f22a2e",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 48,
+    "parameters": [],
+    "sha256": "b6968c1b52e35be1b6dd0f712e85a185e4cf1fb7e82afe7e7f970d2e8d1d834f",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "DeformableAggregation_758586775ea7dec60a4f0b4be0f22a2e_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DeformableAggregation/d=0,p=0/1,2/3,2/3,2/1,2/1,2/1,2",
+            "DeformableAggregation/d=1,p=0/1,2/3,2/3,2/1,2/1,2/1,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "e662a13fcebc6aa016e1df42ab1da146aab6f752cc112923a535c79126835c02",
+        "inputs": [
+            {
+                "name": "mc_ms_feat",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "spatial_shape",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "scale_start_index",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "sampling_location",
+                "index": 3,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "weights",
+                "index": 4,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_feat",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_embeds",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_anchors",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_pts",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_cams",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_scale",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_groups",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

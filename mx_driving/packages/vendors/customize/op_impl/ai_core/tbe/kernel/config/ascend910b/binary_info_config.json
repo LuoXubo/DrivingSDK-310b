@@ -1,0 +1,1772 @@
+{
+  "BEVPoolV3": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v3/BEVPoolV3_71726767828dd2d7d53bbf21a3974f51.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v3/BEVPoolV3_71726767828dd2d7d53bbf21a3974f51.o"
+      }
+    ]
+  },
+  "BEVPool": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=0,p=0/1,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_719f22ac8e3c06fd156a6bb3d9c324ee.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=1,p=0/1,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_719f22ac8e3c06fd156a6bb3d9c324ee.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=1,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=0,p=0/27,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_83d8214aaeb6f0ac2b0e282e757c8b6f.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPool/d=1,p=0/27,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool/BEVPool_83d8214aaeb6f0ac2b0e282e757c8b6f.o"
+      }
+    ]
+  },
+  "DeformableConv2d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2d/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d/DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2d/d=1,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d/DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6.o"
+      }
+    ]
+  },
+  "DrawGaussianToHeatmap": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DrawGaussianToHeatmap/d=0,p=0/4,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/draw_gaussian_to_heatmap/DrawGaussianToHeatmap_0d42c435c45a014375ab51a0026d06a4.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DrawGaussianToHeatmap/d=1,p=0/4,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/draw_gaussian_to_heatmap/DrawGaussianToHeatmap_0d42c435c45a014375ab51a0026d06a4.o"
+      }
+    ]
+  },
+  "Nms3d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3d/d=0,p=0/1,2/6,2",
+        "binPath": "ascend910b/nms3d/Nms3d_8d0324a109a953bb69417bb41c09c855.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3d/d=1,p=0/1,2/6,2",
+        "binPath": "ascend910b/nms3d/Nms3d_8d0324a109a953bb69417bb41c09c855.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3d/d=0,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d/Nms3d_06543d9706f814489612d70e4f06eae2.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3d/d=1,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d/Nms3d_06543d9706f814489612d70e4f06eae2.o"
+      }
+    ]
+  },
+  "MaxPool2d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "MaxPool2d/d=0,p=0/1,2/1,2",
+        "binPath": "ascend910b/max_pool2d/MaxPool2d_e875f437dd4591906107c7f4e3f7eea0.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "MaxPool2d/d=1,p=0/1,2/1,2",
+        "binPath": "ascend910b/max_pool2d/MaxPool2d_e875f437dd4591906107c7f4e3f7eea0.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "MaxPool2d/d=0,p=0/0,2/0,2",
+        "binPath": "ascend910b/max_pool2d/MaxPool2d_8204ccc9e48524fd9e8969445b1f426a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "MaxPool2d/d=1,p=0/0,2/0,2",
+        "binPath": "ascend910b/max_pool2d/MaxPool2d_8204ccc9e48524fd9e8969445b1f426a.o"
+      }
+    ]
+  },
+  "RoiawarePool3d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawarePool3d/d=0,p=0/0,2/0,2/0,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/roiaware_pool3d/RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawarePool3d/d=1,p=0/0,2/0,2/0,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/roiaware_pool3d/RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb.o"
+      }
+    ]
+  },
+  "Gaussian": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Gaussian/d=0,p=0/0,2/3,2/3,2/4,2/3,2/0,2",
+        "binPath": "ascend910b/gaussian/Gaussian_7848738e0dbe97cdd0cd0d05fc521234.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Gaussian/d=1,p=0/0,2/3,2/3,2/4,2/3,2/0,2",
+        "binPath": "ascend910b/gaussian/Gaussian_7848738e0dbe97cdd0cd0d05fc521234.o"
+      }
+    ]
+  },
+  "SubmSparseConv3dV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dV2/d=0,p=0/0,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v2/SubmSparseConv3dV2_a84fb12083ffccc7e493f40b80289e73.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dV2/d=1,p=0/0,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v2/SubmSparseConv3dV2_a84fb12083ffccc7e493f40b80289e73.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dV2/d=0,p=0/1,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v2/SubmSparseConv3dV2_125234fab25242a7f9d67bd0a000cfde.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dV2/d=1,p=0/1,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v2/SubmSparseConv3dV2_125234fab25242a7f9d67bd0a000cfde.o"
+      }
+    ]
+  },
+  "FusedBiasLeakyReluV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "FusedBiasLeakyReluV2/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_6966dfae52d4adb493af3451dd23abc8.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FusedBiasLeakyReluV2/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_6966dfae52d4adb493af3451dd23abc8.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FusedBiasLeakyReluV2/d=0,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_a364fe7265d6d3007fd25caf149dbe0f.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FusedBiasLeakyReluV2/d=1,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fused_bias_leaky_relu_v2/FusedBiasLeakyReluV2_a364fe7265d6d3007fd25caf149dbe0f.o"
+      }
+    ]
+  },
+  "ScatterMaxArgmaxV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMaxArgmaxV1/d=0,p=0/0,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/scatter_max_argmax_v1/ScatterMaxArgmaxV1_661f6d711abc87daeb80e70e2e935087.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMaxArgmaxV1/d=1,p=0/0,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/scatter_max_argmax_v1/ScatterMaxArgmaxV1_661f6d711abc87daeb80e70e2e935087.o"
+      }
+    ]
+  },
+  "FurthestPointSamplingWithDist": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSamplingWithDist/d=0,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling_with_dist/FurthestPointSamplingWithDist_1ee262a7f0ef162577d674f8c2014d56.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSamplingWithDist/d=1,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling_with_dist/FurthestPointSamplingWithDist_1ee262a7f0ef162577d674f8c2014d56.o"
+      }
+    ]
+  },
+  "BorderAlignGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BorderAlignGrad/d=0,p=0/0,2/0,2/3,2/0,2",
+        "binPath": "ascend910b/border_align_grad/BorderAlignGrad_e2a9a054414b5f883544c0096951bcad.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BorderAlignGrad/d=1,p=0/0,2/0,2/3,2/0,2",
+        "binPath": "ascend910b/border_align_grad/BorderAlignGrad_e2a9a054414b5f883544c0096951bcad.o"
+      }
+    ]
+  },
+  "ScatterMaxV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMaxV1/d=0,p=0/0,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/scatter_max_v1/ScatterMaxV1_791cf0c74ca1397f8936e794267f8596.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMaxV1/d=1,p=0/0,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/scatter_max_v1/ScatterMaxV1_791cf0c74ca1397f8936e794267f8596.o"
+      }
+    ]
+  },
+  "GatherNms3dMask": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GatherNms3dMask/d=0,p=0/6,2/6,2/6,2",
+        "binPath": "ascend910b/gather_nms3d_mask/GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GatherNms3dMask/d=1,p=0/6,2/6,2/6,2",
+        "binPath": "ascend910b/gather_nms3d_mask/GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe.o"
+      }
+    ]
+  },
+  "BEVPoolV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=0,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=1,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=0,p=0/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_371924400446f38afb9ed5ef045d28e4.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=1,p=0/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_371924400446f38afb9ed5ef045d28e4.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=0,p=0/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_3a7f16ed4dd81c1668c9e6fbafbdb75d.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2/d=1,p=0/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool_v2/BEVPoolV2_3a7f16ed4dd81c1668c9e6fbafbdb75d.o"
+      }
+    ]
+  },
+  "CartesianToFrenet1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "CartesianToFrenet1/d=0,p=0/0,2/3,2/3,2",
+        "binPath": "ascend910b/cartesian_to_frenet1/CartesianToFrenet1_b7de440bf11b7381c43f8eae36f0e79b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "CartesianToFrenet1/d=1,p=0/0,2/3,2/3,2",
+        "binPath": "ascend910b/cartesian_to_frenet1/CartesianToFrenet1_b7de440bf11b7381c43f8eae36f0e79b.o"
+      }
+    ]
+  },
+  "RoiAlignRotatedV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiAlignRotatedV2/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/roi_align_rotated_v2/RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiAlignRotatedV2/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/roi_align_rotated_v2/RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55.o"
+      }
+    ]
+  },
+  "Nms3dOnSight": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dOnSight/d=0,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d_on_sight/Nms3dOnSight_008c38b17407e5a6a43db023aea76667.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dOnSight/d=1,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d_on_sight/Nms3dOnSight_008c38b17407e5a6a43db023aea76667.o"
+      }
+    ]
+  },
+  "CylinderQuery": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "CylinderQuery/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/cylinder_query/CylinderQuery_59eec11b3fe76930159d9c786e8e061b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "CylinderQuery/d=1,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/cylinder_query/CylinderQuery_59eec11b3fe76930159d9c786e8e061b.o"
+      }
+    ]
+  },
+  "BatchMatmulVector": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BatchMatmulVector/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/batch_matmul_vector/BatchMatmulVector_e4cfe36760686aeee461818d05f0546b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BatchMatmulVector/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/batch_matmul_vector/BatchMatmulVector_e4cfe36760686aeee461818d05f0546b.o"
+      }
+    ]
+  },
+  "ScatterMeanGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMeanGrad/d=0,p=0/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean_grad/ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMeanGrad/d=1,p=0/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean_grad/ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7.o"
+      }
+    ]
+  },
+  "DynamicScatter": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "DynamicScatter/d=0,p=0/0,2/3,2/3,2/0,2/4,2",
+        "binPath": "ascend910b/dynamic_scatter/DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "DynamicScatter/d=1,p=0/0,2/3,2/3,2/0,2/4,2",
+        "binPath": "ascend910b/dynamic_scatter/DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27.o"
+      }
+    ]
+  },
+  "VoxelPoolingTrainGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelPoolingTrainGrad/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/voxel_pooling_train_grad/VoxelPoolingTrainGrad_944cf3e0baae8ba37c41704fbcd24708.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelPoolingTrainGrad/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/voxel_pooling_train_grad/VoxelPoolingTrainGrad_944cf3e0baae8ba37c41704fbcd24708.o"
+      }
+    ]
+  },
+  "SubmSparseConv3d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3d/d=0,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d/SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3d/d=1,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d/SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55.o"
+      }
+    ]
+  },
+  "DeformableConv2dGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_grad/DeformableConv2dGrad_5f838832bc001873821d1f1ccfc33bb6.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_grad/DeformableConv2dGrad_5f838832bc001873821d1f1ccfc33bb6.o"
+      }
+    ]
+  },
+  "GeometricKernelAttention": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GeometricKernelAttention/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/geometric_kernel_attention/GeometricKernelAttention_938beb077bee346a89430663d46b1cbb.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GeometricKernelAttention/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/geometric_kernel_attention/GeometricKernelAttention_938beb077bee346a89430663d46b1cbb.o"
+      }
+    ]
+  },
+  "BorderAlign": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BorderAlign/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/border_align/BorderAlign_a4546293bdc6665d84a78a9ce2824cdf.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BorderAlign/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/border_align/BorderAlign_a4546293bdc6665d84a78a9ce2824cdf.o"
+      }
+    ]
+  },
+  "MultiScaleDeformableAttnGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "MultiScaleDeformableAttnGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/multi_scale_deformable_attn_grad/MultiScaleDeformableAttnGrad_c4f992dbc82702901470727678613f8b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "MultiScaleDeformableAttnGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/multi_scale_deformable_attn_grad/MultiScaleDeformableAttnGrad_c4f992dbc82702901470727678613f8b.o"
+      }
+    ]
+  },
+  "GraphSoftmaxGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "GraphSoftmaxGrad/d=0,p=0/3,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/graph_softmax_grad/GraphSoftmaxGrad_32444bcf404ca033a825cdf578fc5080.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "GraphSoftmaxGrad/d=1,p=0/3,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/graph_softmax_grad/GraphSoftmaxGrad_32444bcf404ca033a825cdf578fc5080.o"
+      }
+    ]
+  },
+  "BoxIou": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxIou/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/box_iou/BoxIou_10766a380c41a4d497708e8d1814f5c3.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxIou/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/box_iou/BoxIou_10766a380c41a4d497708e8d1814f5c3.o"
+      }
+    ]
+  },
+  "VoxelToPoint": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelToPoint/d=0,p=0/3,2/3,2",
+        "binPath": "ascend910b/voxel_to_point/VoxelToPoint_d760c003a26684871b5b4c463740cf2c.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelToPoint/d=1,p=0/3,2/3,2",
+        "binPath": "ascend910b/voxel_to_point/VoxelToPoint_d760c003a26684871b5b4c463740cf2c.o"
+      }
+    ]
+  },
+  "SelectIdxWithMask": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SelectIdxWithMask/d=0,p=0/0,2/3,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/select_idx_with_mask/SelectIdxWithMask_020a4b7d1a86c2a998b7997ac6c56faa.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SelectIdxWithMask/d=1,p=0/0,2/3,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/select_idx_with_mask/SelectIdxWithMask_020a4b7d1a86c2a998b7997ac6c56faa.o"
+      }
+    ]
+  },
+  "Radius": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "Radius/d=0,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2",
+        "binPath": "ascend910b/radius/Radius_2a105487e04e237c75c91b5fe86544d0.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "Radius/d=1,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2",
+        "binPath": "ascend910b/radius/Radius_2a105487e04e237c75c91b5fe86544d0.o"
+      }
+    ]
+  },
+  "UniqueVoxel": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueVoxel/d=0,p=0/0,2/3,2/3,2/3,2/3,2/3,2/3,2",
+        "binPath": "ascend910b/unique_voxel/UniqueVoxel_36767e9212eb70948470a939c2d4d1e4.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueVoxel/d=1,p=0/0,2/3,2/3,2/3,2/3,2/3,2/3,2",
+        "binPath": "ascend910b/unique_voxel/UniqueVoxel_36767e9212eb70948470a939c2d4d1e4.o"
+      }
+    ]
+  },
+  "GroupPointsGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPointsGrad/d=0,p=0/1,2/3,2/1,2",
+        "binPath": "ascend910b/group_points_grad/GroupPointsGrad_2c08c330de3985152263e9d3eef31d12.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPointsGrad/d=1,p=0/1,2/3,2/1,2",
+        "binPath": "ascend910b/group_points_grad/GroupPointsGrad_2c08c330de3985152263e9d3eef31d12.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPointsGrad/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/group_points_grad/GroupPointsGrad_e59516226f0a0639bfd3755eaa472175.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPointsGrad/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/group_points_grad/GroupPointsGrad_e59516226f0a0639bfd3755eaa472175.o"
+      }
+    ]
+  },
+  "FakeTensorQuant": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuant/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fake_tensor_quant/FakeTensorQuant_c64ac893d651a615ed8485dd77dc6204.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuant/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fake_tensor_quant/FakeTensorQuant_c64ac893d651a615ed8485dd77dc6204.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuant/d=0,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fake_tensor_quant/FakeTensorQuant_b00da269c9a4af6913eee040efd90fe9.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuant/d=1,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fake_tensor_quant/FakeTensorQuant_b00da269c9a4af6913eee040efd90fe9.o"
+      }
+    ]
+  },
+  "GridSampler3dGradV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler3dGradV1/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler3d_grad_v1/GridSampler3dGradV1_0250abe04845181c13a3d92d4168e161.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler3dGradV1/d=1,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler3d_grad_v1/GridSampler3dGradV1_0250abe04845181c13a3d92d4168e161.o"
+      }
+    ]
+  },
+  "RoiawareMaxpool3dGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawareMaxpool3dGrad/d=0,p=0/3,2/0,2/0,2",
+        "binPath": "ascend910b/roiaware_maxpool3d_grad/RoiawareMaxpool3dGrad_b1f3753a48be24f4be4fa58f3c6b3dc7.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawareMaxpool3dGrad/d=1,p=0/3,2/0,2/0,2",
+        "binPath": "ascend910b/roiaware_maxpool3d_grad/RoiawareMaxpool3dGrad_b1f3753a48be24f4be4fa58f3c6b3dc7.o"
+      }
+    ]
+  },
+  "DeformableAggregation": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregation/d=0,p=0/1,2/3,2/3,2/1,2/1,2/1,2",
+        "binPath": "ascend910b/deformable_aggregation/DeformableAggregation_758586775ea7dec60a4f0b4be0f22a2e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregation/d=1,p=0/1,2/3,2/3,2/1,2/1,2/1,2",
+        "binPath": "ascend910b/deformable_aggregation/DeformableAggregation_758586775ea7dec60a4f0b4be0f22a2e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregation/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_aggregation/DeformableAggregation_cefef696f729e341e549e07d27365833.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregation/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_aggregation/DeformableAggregation_cefef696f729e341e549e07d27365833.o"
+      }
+    ]
+  },
+  "PointToVoxel": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointToVoxel/d=0,p=0/0,2/0,2",
+        "binPath": "ascend910b/point_to_voxel/PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointToVoxel/d=1,p=0/0,2/0,2",
+        "binPath": "ascend910b/point_to_voxel/PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointToVoxel/d=0,p=0/3,2/0,2",
+        "binPath": "ascend910b/point_to_voxel/PointToVoxel_975c1c30704cb32413acdb9aee4eb5d2.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointToVoxel/d=1,p=0/3,2/0,2",
+        "binPath": "ascend910b/point_to_voxel/PointToVoxel_975c1c30704cb32413acdb9aee4eb5d2.o"
+      }
+    ]
+  },
+  "Knn": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Knn/d=0,p=0/0,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/knn/Knn_369b12a41f848384dc51b28965a91646.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Knn/d=1,p=0/0,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/knn/Knn_369b12a41f848384dc51b28965a91646.o"
+      }
+    ]
+  },
+  "CalcPolyStartEndSl": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "CalcPolyStartEndSl/d=0,p=0/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/calc_poly_start_end_sl/CalcPolyStartEndSl_665cfff83cfcb1a3aeb8639f684e4863.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "CalcPolyStartEndSl/d=1,p=0/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/calc_poly_start_end_sl/CalcPolyStartEndSl_665cfff83cfcb1a3aeb8639f684e4863.o"
+      }
+    ]
+  },
+  "HypotGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "HypotGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/hypot_grad/HypotGrad_a478e0613fbe56a902aaabf169e9e783.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "HypotGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/hypot_grad/HypotGrad_a478e0613fbe56a902aaabf169e9e783.o"
+      }
+    ]
+  },
+  "GroupPoints": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPoints/d=0,p=0/1,2/3,2/1,2",
+        "binPath": "ascend910b/group_points/GroupPoints_b3b7b5f9132df3067382d9ef5736c78c.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPoints/d=1,p=0/1,2/3,2/1,2",
+        "binPath": "ascend910b/group_points/GroupPoints_b3b7b5f9132df3067382d9ef5736c78c.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPoints/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/group_points/GroupPoints_271f27897551b56afe90988bb8a13d82.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GroupPoints/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/group_points/GroupPoints_271f27897551b56afe90988bb8a13d82.o"
+      }
+    ]
+  },
+  "HardVoxelize": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "HardVoxelize/d=0,p=0/0,2/3,2/3,2/3,2/3,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/hard_voxelize/HardVoxelize_4ca48d9f18d94250757c81828038052d.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "HardVoxelize/d=1,p=0/0,2/3,2/3,2/3,2/3,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/hard_voxelize/HardVoxelize_4ca48d9f18d94250757c81828038052d.o"
+      }
+    ]
+  },
+  "RoiAlignRotatedGradV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiAlignRotatedGradV2/d=0,p=0/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/roi_align_rotated_grad_v2/RoiAlignRotatedGradV2_dc2fda4c067de3d5198ab28257627f42.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiAlignRotatedGradV2/d=1,p=0/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/roi_align_rotated_grad_v2/RoiAlignRotatedGradV2_dc2fda4c067de3d5198ab28257627f42.o"
+      }
+    ]
+  },
+  "ScatterMean": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMean/d=0,p=0/0,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean/ScatterMean_82c3268bf99915e4a4b178fcf120ad63.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMean/d=1,p=0/0,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean/ScatterMean_82c3268bf99915e4a4b178fcf120ad63.o"
+      }
+    ]
+  },
+  "PixelGroup": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "PixelGroup/d=0,p=0/0,2/12,2/0,2/3,2/4,2/0,2/3,2",
+        "binPath": "ascend910b/pixel_group/PixelGroup_a0d5571028d9aec512485990b44b536a.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "PixelGroup/d=1,p=0/0,2/12,2/0,2/3,2/4,2/0,2/3,2",
+        "binPath": "ascend910b/pixel_group/PixelGroup_a0d5571028d9aec512485990b44b536a.o"
+      }
+    ]
+  },
+  "RoiawareAvgpool3dGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawareAvgpool3dGrad/d=0,p=0/3,2/0,2/0,2",
+        "binPath": "ascend910b/roiaware_avgpool3d_grad/RoiawareAvgpool3dGrad_408d14a5963c7791d44062aaf1202d6f.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoiawareAvgpool3dGrad/d=1,p=0/3,2/0,2/0,2",
+        "binPath": "ascend910b/roiaware_avgpool3d_grad/RoiawareAvgpool3dGrad_408d14a5963c7791d44062aaf1202d6f.o"
+      }
+    ]
+  },
+  "SubmSparseConv3dGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dGrad/d=0,p=0/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad/SubmSparseConv3dGrad_ed35c7c020f49483bc1e9de64e4f849f.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dGrad/d=1,p=0/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad/SubmSparseConv3dGrad_ed35c7c020f49483bc1e9de64e4f849f.o"
+      }
+    ]
+  },
+  "MultiScaleDeformableAttn": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "MultiScaleDeformableAttn/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/multi_scale_deformable_attn/MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "MultiScaleDeformableAttn/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/multi_scale_deformable_attn/MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35.o"
+      }
+    ]
+  },
+  "DynamicScatterGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DynamicScatterGrad/d=0,p=0/0,2/3,2/3,2/4,2/0,2",
+        "binPath": "ascend910b/dynamic_scatter_grad/DynamicScatterGrad_0a427577a707fde753c5a29350162245.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DynamicScatterGrad/d=1,p=0/0,2/3,2/3,2/4,2/0,2",
+        "binPath": "ascend910b/dynamic_scatter_grad/DynamicScatterGrad_0a427577a707fde753c5a29350162245.o"
+      }
+    ]
+  },
+  "PointsInBox": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointsInBox/d=0,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/points_in_box/PointsInBox_e17af9bd05dc6093f6593594fcf8db8e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointsInBox/d=1,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/points_in_box/PointsInBox_e17af9bd05dc6093f6593594fcf8db8e.o"
+      }
+    ]
+  },
+  "ScatterAddV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterAddV1/d=0,p=0/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_add_v1/ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterAddV1/d=1,p=0/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_add_v1/ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1.o"
+      }
+    ]
+  },
+  "DeformableConv2dGradV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dGradV2/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_grad_v2/DeformableConv2dGradV2_9122c24b9d9de312e17dc831531fd38e.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dGradV2/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_grad_v2/DeformableConv2dGradV2_9122c24b9d9de312e17dc831531fd38e.o"
+      }
+    ]
+  },
+  "RoipointPool3dForward": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoipointPool3dForward/d=0,p=0/0,2/0,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_68efd879cae6d95ff4bb33b5990f5335.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoipointPool3dForward/d=1,p=0/0,2/0,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_68efd879cae6d95ff4bb33b5990f5335.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoipointPool3dForward/d=0,p=0/1,2/1,2/1,2/1,2/3,2",
+        "binPath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_bbf824a985ca7e4a7f518c38b068b9cf.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "RoipointPool3dForward/d=1,p=0/1,2/1,2/1,2/1,2/3,2",
+        "binPath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_bbf824a985ca7e4a7f518c38b068b9cf.o"
+      }
+    ]
+  },
+  "ScatterMeanDiv": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMeanDiv/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean_div/ScatterMeanDiv_ba2ca7ef957bfd3ad9e22dbbe718496d.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterMeanDiv/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/scatter_mean_div/ScatterMeanDiv_ba2ca7ef957bfd3ad9e22dbbe718496d.o"
+      }
+    ]
+  },
+  "SubmSparseConv3dV3": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dV3/d=0,p=0/0,2/0,2/3,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v3/SubmSparseConv3dV3_090bc8dcd5655023f20a6bb4bd48cbbd.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dV3/d=1,p=0/0,2/0,2/3,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v3/SubmSparseConv3dV3_090bc8dcd5655023f20a6bb4bd48cbbd.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dV3/d=0,p=0/1,2/1,2/3,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v3/SubmSparseConv3dV3_e1c4905eab8fde1dd96acb2998eacad1.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dV3/d=1,p=0/1,2/1,2/3,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_v3/SubmSparseConv3dV3_e1c4905eab8fde1dd96acb2998eacad1.o"
+      }
+    ]
+  },
+  "BoxesOverlapBevV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxesOverlapBevV1/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/boxes_overlap_bev_v1/BoxesOverlapBevV1_3c9e880bd106939f87cfa14f0bb7e784.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxesOverlapBevV1/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/boxes_overlap_bev_v1/BoxesOverlapBevV1_3c9e880bd106939f87cfa14f0bb7e784.o"
+      }
+    ]
+  },
+  "AssignScoreWithk": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "AssignScoreWithk/d=0,p=0/0,2/0,2/0,2/9,2/0,2",
+        "binPath": "ascend910b/assign_score_withk/AssignScoreWithk_6115fe3fd950684b9790474344dabaa7.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "AssignScoreWithk/d=1,p=0/0,2/0,2/0,2/9,2/0,2",
+        "binPath": "ascend910b/assign_score_withk/AssignScoreWithk_6115fe3fd950684b9790474344dabaa7.o"
+      }
+    ]
+  },
+  "GraphSoftmax": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "GraphSoftmax/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/graph_softmax/GraphSoftmax_8518172c3115222bfc8b76fc5ae1d445.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "GraphSoftmax/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/graph_softmax/GraphSoftmax_8518172c3115222bfc8b76fc5ae1d445.o"
+      }
+    ]
+  },
+  "DynamicVoxelization": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DynamicVoxelization/d=0,p=0/0,2/3,2",
+        "binPath": "ascend910b/dynamic_voxelization/DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DynamicVoxelization/d=1,p=0/0,2/3,2",
+        "binPath": "ascend910b/dynamic_voxelization/DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8.o"
+      }
+    ]
+  },
+  "BEVPoolGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=0,p=0/1,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_494b829982dc4ca432fdb825882f778b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=1,p=0/1,2/3,2/3,2/3,2/1,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_494b829982dc4ca432fdb825882f778b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=0,p=0/27,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_d1527085d9ef7d4204dcc450f2a61ad2.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=1,p=0/27,2/3,2/3,2/3,2/27,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_d1527085d9ef7d4204dcc450f2a61ad2.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolGrad/d=1,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_grad/BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e.o"
+      }
+    ]
+  },
+  "AssignScoreWithkGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "AssignScoreWithkGrad/d=0,p=0/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/assign_score_withk_grad/AssignScoreWithkGrad_6383c0693754ff188121e4bab31a410e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "AssignScoreWithkGrad/d=1,p=0/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/assign_score_withk_grad/AssignScoreWithkGrad_6383c0693754ff188121e4bab31a410e.o"
+      }
+    ]
+  },
+  "BEVPoolV2Grad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=0,p=0/27,2/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_c6d22aa5739ac302a4bf5057978c4b77.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=1,p=0/27,2/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_c6d22aa5739ac302a4bf5057978c4b77.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=0,p=0/0,2/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_da8dbcf0c61295f129369a24ee68452a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=1,p=0/0,2/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_da8dbcf0c61295f129369a24ee68452a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=0,p=0/1,2/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_a0d0b115730bbed779c7465a5d55a30e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV2Grad/d=1,p=0/1,2/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "binPath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_a0d0b115730bbed779c7465a5d55a30e.o"
+      }
+    ]
+  },
+  "SubmSparseConv3dWithKey": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dWithKey/d=0,p=0/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_with_key/SubmSparseConv3dWithKey_f7da5f3d984ee735dfa89aee6eb1535a.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SubmSparseConv3dWithKey/d=1,p=0/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_with_key/SubmSparseConv3dWithKey_f7da5f3d984ee735dfa89aee6eb1535a.o"
+      }
+    ]
+  },
+  "ScatterAddGradV1": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterAddGradV1/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/scatter_add_grad_v1/ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "ScatterAddGradV1/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend910b/scatter_add_grad_v1/ScatterAddGradV1_40b3a29b807e66ad471c960a2a182eb1.o"
+      }
+    ]
+  },
+  "UniqueV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/1,2/1,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_3be1faeeb0f12b09c1f48fd589cab344.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/1,2/1,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_3be1faeeb0f12b09c1f48fd589cab344.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_66f8119b4fb611c7783692c6f6dc86d7.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_66f8119b4fb611c7783692c6f6dc86d7.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/3,2/3,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_1fc6dbc7f10705a99a4fadc232ed345c.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/3,2/3,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_1fc6dbc7f10705a99a4fadc232ed345c.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/9,2/9,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_7ef2bad93b2ac7e2082f1e07152f88e5.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/9,2/9,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_7ef2bad93b2ac7e2082f1e07152f88e5.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/6,2/6,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_13f6ba7d0a68b846abe48a79e5833d29.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/6,2/6,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_13f6ba7d0a68b846abe48a79e5833d29.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=0,p=0/27,2/27,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_eadd5b5c728391663a66b9f45d4a47a5.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "UniqueV2/d=1,p=0/27,2/27,2/3,2",
+        "binPath": "ascend910b/unique_v2/UniqueV2_eadd5b5c728391663a66b9f45d4a47a5.o"
+      }
+    ]
+  },
+  "Nms3dNormal": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dNormal/d=0,p=0/1,2/6,2",
+        "binPath": "ascend910b/nms3d_normal/Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dNormal/d=1,p=0/1,2/6,2",
+        "binPath": "ascend910b/nms3d_normal/Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dNormal/d=0,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d_normal/Nms3dNormal_ad62e24511fb8eebc99fabd73d329b4b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Nms3dNormal/d=1,p=0/0,2/6,2",
+        "binPath": "ascend910b/nms3d_normal/Nms3dNormal_ad62e24511fb8eebc99fabd73d329b4b.o"
+      }
+    ]
+  },
+  "DiffIouRotatedSortVertices": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DiffIouRotatedSortVertices/d=0,p=0/0,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/diff_iou_rotated_sort_vertices/DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DiffIouRotatedSortVertices/d=1,p=0/0,2/0,2/3,2/3,2",
+        "binPath": "ascend910b/diff_iou_rotated_sort_vertices/DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd.o"
+      }
+    ]
+  },
+  "SparseConv3d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SparseConv3d/d=0,p=0/3,2/3,2/3,2",
+        "binPath": "ascend910b/sparse_conv3d/SparseConv3d_4090ce791da85b0d663099821d8841a3.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SparseConv3d/d=1,p=0/3,2/3,2/3,2",
+        "binPath": "ascend910b/sparse_conv3d/SparseConv3d_4090ce791da85b0d663099821d8841a3.o"
+      }
+    ]
+  },
+  "SubmSparseConv3dGradV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dGradV2/d=0,p=0/1,2/1,2/3,2/1,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_c2578d0f9bfb95325af3d56ee37a46f4.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dGradV2/d=1,p=0/1,2/1,2/3,2/1,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_c2578d0f9bfb95325af3d56ee37a46f4.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dGradV2/d=0,p=0/0,2/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_da62cc4ba640f64adce18269febf5629.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SubmSparseConv3dGradV2/d=1,p=0/0,2/0,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_da62cc4ba640f64adce18269febf5629.o"
+      }
+    ]
+  },
+  "DeformableAggregationGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregationGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_15cd5a57aedc679c20eb141acbdbce6e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregationGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_15cd5a57aedc679c20eb141acbdbce6e.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregationGrad/d=0,p=0/1,2/3,2/3,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "binPath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_1885f5054521a204bc836ab0f95975de.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "DeformableAggregationGrad/d=1,p=0/1,2/3,2/3,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "binPath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_1885f5054521a204bc836ab0f95975de.o"
+      }
+    ]
+  },
+  "SparseInverseConv3d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "SparseInverseConv3d/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/sparse_inverse_conv3d/SparseInverseConv3d_f7e259a6349ddcd2c89bf1e2d98e8b68.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "SparseInverseConv3d/d=1,p=0/0,2/3,2/3,2/3,2/0,2",
+        "binPath": "ascend910b/sparse_inverse_conv3d/SparseInverseConv3d_f7e259a6349ddcd2c89bf1e2d98e8b68.o"
+      }
+    ]
+  },
+  "GeometricKernelAttnGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GeometricKernelAttnGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/geometric_kernel_attn_grad/GeometricKernelAttnGrad_bff2618f41526025512441977b5b2289.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GeometricKernelAttnGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/geometric_kernel_attn_grad/GeometricKernelAttnGrad_bff2618f41526025512441977b5b2289.o"
+      }
+    ]
+  },
+  "BEVPoolV3Grad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3Grad/d=0,p=0/0,2/0,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v3_grad/BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3Grad/d=1,p=0/0,2/0,2/3,2/0,2",
+        "binPath": "ascend910b/bev_pool_v3_grad/BEVPoolV3Grad_669076ea5f9698f8fe6cf6bfb615ff2c.o"
+      }
+    ]
+  },
+  "DeformableConv2dV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dV2/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_v2/DeformableConv2dV2_a870361ddaaab971e8c099733371fe4f.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "DeformableConv2dV2/d=1,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/deformable_conv2d_v2/DeformableConv2dV2_a870361ddaaab971e8c099733371fe4f.o"
+      }
+    ]
+  },
+  "Hypot": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "Hypot/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/hypot/Hypot_2f1bc437a35972013181af022b436faa.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "Hypot/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/hypot/Hypot_2f1bc437a35972013181af022b436faa.o"
+      }
+    ]
+  },
+  "CalAnchorsHeading": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "CalAnchorsHeading/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/cal_anchors_heading/CalAnchorsHeading_32103f6c118474581c1ba33671a23fcb.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "CalAnchorsHeading/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/cal_anchors_heading/CalAnchorsHeading_32103f6c118474581c1ba33671a23fcb.o"
+      }
+    ]
+  },
+  "SparseConv3dGrad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseConv3dGrad/d=0,p=0/1,2/1,2/3,2/3,2/1,2/1,2",
+        "binPath": "ascend910b/sparse_conv3d_grad/SparseConv3dGrad_f385251341902b32355e1814cb3583aa.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseConv3dGrad/d=1,p=0/1,2/1,2/3,2/3,2/1,2/1,2",
+        "binPath": "ascend910b/sparse_conv3d_grad/SparseConv3dGrad_f385251341902b32355e1814cb3583aa.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseConv3dGrad/d=0,p=0/0,2/0,2/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/sparse_conv3d_grad/SparseConv3dGrad_625e52c212cad21caff15634a83491f6.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseConv3dGrad/d=1,p=0/0,2/0,2/3,2/3,2/0,2/0,2",
+        "binPath": "ascend910b/sparse_conv3d_grad/SparseConv3dGrad_625e52c212cad21caff15634a83491f6.o"
+      }
+    ]
+  },
+  "AddRelu": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "AddRelu/d=0,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/add_relu/AddRelu_5e1ddc77d083952fd3c5910f000871fe.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "AddRelu/d=1,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/add_relu/AddRelu_5e1ddc77d083952fd3c5910f000871fe.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "AddRelu/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/add_relu/AddRelu_1907f3e124c32ea4c8637789e310b4df.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "AddRelu/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/add_relu/AddRelu_1907f3e124c32ea4c8637789e310b4df.o"
+      }
+    ]
+  },
+  "GridSampler2dV2": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler2dV2/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler2d_v2/GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler2dV2/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler2d_v2/GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2.o"
+      }
+    ]
+  },
+  "FakeTensorQuantWithAxis": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuantWithAxis/d=0,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fake_tensor_quant_with_axis/FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuantWithAxis/d=1,p=0/1,2/1,2/1,2",
+        "binPath": "ascend910b/fake_tensor_quant_with_axis/FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuantWithAxis/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fake_tensor_quant_with_axis/FakeTensorQuantWithAxis_708d6054a1dc232a13a3885ecf693f3f.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FakeTensorQuantWithAxis/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/fake_tensor_quant_with_axis/FakeTensorQuantWithAxis_708d6054a1dc232a13a3885ecf693f3f.o"
+      }
+    ]
+  },
+  "PointsInBoxAll": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointsInBoxAll/d=0,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/points_in_box_all/PointsInBoxAll_8f55c0c459800abb9f9eee885619ce7b.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "PointsInBoxAll/d=1,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/points_in_box_all/PointsInBoxAll_8f55c0c459800abb9f9eee885619ce7b.o"
+      }
+    ]
+  },
+  "VoxelPoolingTrain": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelPoolingTrain/d=0,p=0/3,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/voxel_pooling_train/VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "VoxelPoolingTrain/d=1,p=0/3,2/0,2/0,2/3,2",
+        "binPath": "ascend910b/voxel_pooling_train/VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe.o"
+      }
+    ]
+  },
+  "SparseMatmul": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseMatmul/d=0,p=0/1,2/1,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/sparse_matmul/SparseMatmul_c0323b238bb419a19724a3c250c93ac1.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseMatmul/d=1,p=0/1,2/1,2/3,2/3,2/3,2/1,2/3,2",
+        "binPath": "ascend910b/sparse_matmul/SparseMatmul_c0323b238bb419a19724a3c250c93ac1.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseMatmul/d=0,p=0/0,2/0,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/sparse_matmul/SparseMatmul_86e3d971b003a44c309578f401e74667.o"
+      },
+      {
+        "coreType": 0,
+        "simplifiedKey": "SparseMatmul/d=1,p=0/0,2/0,2/3,2/3,2/3,2/0,2/3,2",
+        "binPath": "ascend910b/sparse_matmul/SparseMatmul_86e3d971b003a44c309578f401e74667.o"
+      }
+    ]
+  },
+  "FurthestPointSampling": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=0,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_f514f7fe46409d857474e77d3c722192.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=1,p=0/0,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_f514f7fe46409d857474e77d3c722192.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=0,p=0/1,2/1,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_ab69d5bd9a10de22e147d6544ecd61cd.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=1,p=0/1,2/1,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_ab69d5bd9a10de22e147d6544ecd61cd.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=0,p=0/27,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_66bea364a281b5f2dae98e82052266dd.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "FurthestPointSampling/d=1,p=0/27,2/0,2/3,2",
+        "binPath": "ascend910b/furthest_point_sampling/FurthestPointSampling_66bea364a281b5f2dae98e82052266dd.o"
+      }
+    ]
+  },
+  "BoxesOverlapBev": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxesOverlapBev/d=0,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/boxes_overlap_bev/BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BoxesOverlapBev/d=1,p=0/0,2/0,2/0,2",
+        "binPath": "ascend910b/boxes_overlap_bev/BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396.o"
+      }
+    ]
+  },
+  "GridSampler2dV2Grad": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler2dV2Grad/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler2d_v2_grad/GridSampler2dV2Grad_cb87f64001c55445cda8eb8b75196950.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "GridSampler2dV2Grad/d=1,p=0/0,2/0,2/0,2/0,2/0,2",
+        "binPath": "ascend910b/grid_sampler2d_v2_grad/GridSampler2dV2Grad_cb87f64001c55445cda8eb8b75196950.o"
+      }
+    ]
+  }
+}

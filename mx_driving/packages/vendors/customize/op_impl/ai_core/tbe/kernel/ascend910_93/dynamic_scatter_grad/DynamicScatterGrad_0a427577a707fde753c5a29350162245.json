@@ -1,0 +1,113 @@
+{
+    "binFileName": "DynamicScatterGrad_0a427577a707fde753c5a29350162245",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "DynamicScatterGrad_0a427577a707fde753c5a29350162245",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 88,
+    "parameters": [],
+    "sha256": "9728c80d985927db6110101b84f55b68ceedf5528bce2f1aa298d20b9b28d9da",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "DynamicScatterGrad_0a427577a707fde753c5a29350162245_102"
+        },
+        {
+            "kernelName": "DynamicScatterGrad_0a427577a707fde753c5a29350162245_101"
+        },
+        {
+            "kernelName": "DynamicScatterGrad_0a427577a707fde753c5a29350162245_100"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DynamicScatterGrad/d=0,p=0/0,2/3,2/3,2/4,2/0,2",
+            "DynamicScatterGrad/d=1,p=0/0,2/3,2/3,2/4,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "104fab374c5cbf20a5005636bad13ef6b06a5538812546ce95025168b77df0ee",
+        "inputs": [
+            {
+                "name": "grad_voxel_feats",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "num_point_per_voxel",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "argsort_coor",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "compare_mask",
+                "index": 3,
+                "dtype": "uint8",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_feats",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "reduce_type",
+                "dtype": "str",
+                "value": ""
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

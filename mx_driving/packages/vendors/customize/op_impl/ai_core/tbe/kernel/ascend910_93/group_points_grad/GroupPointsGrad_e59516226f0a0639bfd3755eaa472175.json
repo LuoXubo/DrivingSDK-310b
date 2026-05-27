@@ -1,0 +1,110 @@
+{
+    "binFileName": "GroupPointsGrad_e59516226f0a0639bfd3755eaa472175",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "GroupPointsGrad_e59516226f0a0639bfd3755eaa472175",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 48,
+    "parameters": [],
+    "sha256": "0d5950476de6fabe42e6777b8f539b6e82dfdababfa6a14f64317b705a952fab",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "GroupPointsGrad_e59516226f0a0639bfd3755eaa472175_1"
+        },
+        {
+            "kernelName": "GroupPointsGrad_e59516226f0a0639bfd3755eaa472175_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "GroupPointsGrad/d=0,p=0/0,2/3,2/0,2",
+            "GroupPointsGrad/d=1,p=0/0,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "dad70678192c3f73e4192329617ce4abcfec2f26b184c9e3fc23a805ab6964ee",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_points",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "b",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "c",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "n",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "npoints",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "nsample",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "binFileName": "Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 40,
+    "parameters": [],
+    "sha256": "0ebe08415f729d3433284a96a9af4215b55929cc7e43d9b1432c7a76e32cb6e5",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8_1"
+        },
+        {
+            "kernelName": "Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "Nms3dNormal/d=0,p=0/1,2/6,2",
+            "Nms3dNormal/d=1,p=0/1,2/6,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "72708be9b1f4f5c6d235954e368f12591044c5d84c26f34454a0f9fdf001c1c6",
+        "inputs": [
+            {
+                "name": "boxes",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "mask",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "nms_overlap_thresh",
+                "dtype": "float",
+                "value": 0.0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

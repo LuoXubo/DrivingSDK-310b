@@ -1,0 +1,102 @@
+{
+    "binFileName": "SparseConv3d_4090ce791da85b0d663099821d8841a3",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "SparseConv3d_4090ce791da85b0d663099821d8841a3",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 96,
+    "parameters": [],
+    "sha256": "9ea6e2344598c9bcd7ed72b4c3bec0d645a8c4653d21bb0b9b3287e11f3d7398",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "SparseConv3d_4090ce791da85b0d663099821d8841a3_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "SparseConv3d/d=0,p=0/3,2/3,2/3,2",
+            "SparseConv3d/d=1,p=0/3,2/3,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "76b26889d3f7e86b392bf0251fe2db5cb41b9e95265a945afe96b5f5ed83a234",
+        "inputs": [
+            {
+                "name": "indices",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "indices_out",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices_pair",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "kernel_size",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "out_spatial_shape",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "stride",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "padding",
+                "dtype": "list_int",
+                "value": []
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

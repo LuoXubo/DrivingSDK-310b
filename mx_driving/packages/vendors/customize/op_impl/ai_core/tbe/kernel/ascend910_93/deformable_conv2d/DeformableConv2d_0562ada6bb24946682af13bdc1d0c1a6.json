@@ -1,0 +1,165 @@
+{
+    "binFileName": "DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 344,
+    "parameters": [],
+    "sha256": "b615894362b27e14a9da1527705068d6de1ef0a5ee32060960b450f19e61ab89",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "taskRation": "1:2",
+    "kernelList": [
+        {
+            "kernelName": "DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6_0"
+        },
+        {
+            "kernelName": "DeformableConv2d_0562ada6bb24946682af13bdc1d0c1a6_1"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DeformableConv2d/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+            "DeformableConv2d/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "e599592785e6341d1d2bba6d84f19512c9fc8ac313f72263c329df616e63c832",
+        "inputs": [
+            {
+                "name": "x",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "weight",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "bias",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "offset",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "mask",
+                "index": 4,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "y",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "offset_output",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "kernel_size",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "stride",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "padding",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "dilation",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "groups",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "deformable_groups",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "modulated",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "with_bias",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

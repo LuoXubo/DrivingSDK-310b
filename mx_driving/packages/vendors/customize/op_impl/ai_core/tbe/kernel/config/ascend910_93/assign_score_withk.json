@@ -1,0 +1,106 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "AssignScoreWithk/d=0,p=0/0,2/0,2/0,2/9,2/0,2",
+        "AssignScoreWithk/d=1,p=0/0,2/0,2/0,2/9,2/0,2"
+      ],
+      "staticKey": "bd1297241b6ab0daf1549f7e739ba672e9f1b0047e79728217629e69c6311c3b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "centers",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scores",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "knn_idx",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "nsource",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "npoint",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_weights",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_neighbors",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_features",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "aggregate",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/assign_score_withk/AssignScoreWithk_6115fe3fd950684b9790474344dabaa7.json"
+      }
+    }
+  ]
+}

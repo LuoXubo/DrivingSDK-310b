@@ -1,0 +1,80 @@
+{
+    "binFileName": "CartesianToFrenet1_b7de440bf11b7381c43f8eae36f0e79b",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "CartesianToFrenet1_b7de440bf11b7381c43f8eae36f0e79b",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 112,
+    "parameters": [],
+    "sha256": "0071acf83e7722d32cf48b3c6068438b8b94f7faf8b2729dad0089f8763e66b4",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "CartesianToFrenet1_b7de440bf11b7381c43f8eae36f0e79b_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "CartesianToFrenet1/d=0,p=0/0,2/3,2/3,2",
+            "CartesianToFrenet1/d=1,p=0/0,2/3,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "6959bd921702246acdce8912515122428eb321a73a30623d8c53f7640dd9ebb3",
+        "inputs": [
+            {
+                "name": "dist_vec",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "min_idx",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "back_idx",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

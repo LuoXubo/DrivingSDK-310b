@@ -1,0 +1,61 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "BoxIou/d=0,p=0/0,2/0,2/0,2",
+        "BoxIou/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "c78d7c99b81367c460ee36ebfc9c763276d8beb303e36f9b4c9506379e7c887c",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes_a",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "boxes_b",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ious",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode_flag",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/box_iou/BoxIou_10766a380c41a4d497708e8d1814f5c3.json"
+      }
+    }
+  ]
+}

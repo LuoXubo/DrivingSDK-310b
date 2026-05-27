@@ -1,0 +1,154 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "SubmSparseConv3dGradV2/d=0,p=0/1,2/1,2/3,2/1,2/0,2",
+        "SubmSparseConv3dGradV2/d=1,p=0/1,2/1,2/3,2/1,2/0,2"
+      ],
+      "staticKey": "c7e7ef09b5035b7d175c0cb49bd1f2ae45be9e497fd2068856c8a297592546a0",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out_features",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_offset",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "features_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight_grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_c2578d0f9bfb95325af3d56ee37a46f4.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "SubmSparseConv3dGradV2/d=0,p=0/0,2/0,2/3,2/0,2/0,2",
+        "SubmSparseConv3dGradV2/d=1,p=0/0,2/0,2/3,2/0,2/0,2"
+      ],
+      "staticKey": "de1845c85d474a51ab4a337d2cda1c99e3ecd123fb92d2f76d2b592dacdd62ae",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out_features",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_offset",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "features_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight_grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/subm_sparse_conv3d_grad_v2/SubmSparseConv3dGradV2_da62cc4ba640f64adce18269febf5629.json"
+      }
+    }
+  ]
+}

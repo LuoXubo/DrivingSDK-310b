@@ -1,0 +1,106 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "RoiawarePool3d/d=0,p=0/0,2/0,2/0,2/3,2/3,2/0,2",
+        "RoiawarePool3d/d=1,p=0/0,2/0,2/0,2/3,2/3,2/0,2"
+      ],
+      "staticKey": "84279da9ab590e5fbb62e8fc4e37fe1986f1ca7b6b5fb93a20a66862fea480e8",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "rois",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pts",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pts_feature",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "argmax",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pts_idx_of_voxels",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pooled_features",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "max_pts_each_voxel",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "outx",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "outy",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "outz",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roiaware_pool3d/RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb.json"
+      }
+    }
+  ]
+}

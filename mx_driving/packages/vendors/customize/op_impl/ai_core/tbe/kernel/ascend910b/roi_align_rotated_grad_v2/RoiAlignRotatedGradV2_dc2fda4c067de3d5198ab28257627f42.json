@@ -1,0 +1,122 @@
+{
+    "binFileName": "RoiAlignRotatedGradV2_dc2fda4c067de3d5198ab28257627f42",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "RoiAlignRotatedGradV2_dc2fda4c067de3d5198ab28257627f42",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 64,
+    "parameters": [],
+    "sha256": "4d8e580de0a0300fa854304aafaa26cfd041e152667da06b244e37da65d44132",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "RoiAlignRotatedGradV2_dc2fda4c067de3d5198ab28257627f42_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "RoiAlignRotatedGradV2/d=0,p=0/0,2/0,2/0,2/0,2",
+            "RoiAlignRotatedGradV2/d=1,p=0/0,2/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "e1c82000f24348dec531cb3aeadfa2454a48527f83e662b2456aedaf7f7bdd10",
+        "inputs": [
+            {
+                "name": "input",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "rois",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grad_output",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_input",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "pooled_height",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "pooled_width",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "spatial_scale",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "sampling_ratio",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aligned",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "clockwise",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

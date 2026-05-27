@@ -1,0 +1,59 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "ScatterMaxArgmaxV1/d=0,p=0/0,2/3,2/0,2/3,2",
+        "ScatterMaxArgmaxV1/d=1,p=0/0,2/3,2/0,2/3,2"
+      ],
+      "staticKey": "c946919a7e1002119d0a89e9acaa53bf5fb2b37186be8631e9c6c9c576f37c11",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "res",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/scatter_max_argmax_v1/ScatterMaxArgmaxV1_661f6d711abc87daeb80e70e2e935087.json"
+      }
+    }
+  ]
+}

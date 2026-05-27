@@ -1,0 +1,137 @@
+{
+    "binFileName": "SubmSparseConv3dV2_a84fb12083ffccc7e493f40b80289e73",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "SubmSparseConv3dV2_a84fb12083ffccc7e493f40b80289e73",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 64,
+    "parameters": [],
+    "sha256": "57adff2be6dffabd7e4d2cb984c77aaebf7535bd6d48d4f437f4f802c437b6a5",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "SubmSparseConv3dV2_a84fb12083ffccc7e493f40b80289e73_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "SubmSparseConv3dV2/d=0,p=0/0,2/3,2/3,2/3,2/0,2/3,2",
+            "SubmSparseConv3dV2/d=1,p=0/0,2/3,2/3,2/3,2/0,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "1c0374fc6d8a2f102119b1fc205943699a8efa4bbe95e3238ca0fbd0224e12c0",
+        "inputs": [
+            {
+                "name": "feature",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "map1",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "map2",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "feature_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices_offset",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "kernel_size",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "in_channels",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "out_spatial_shape",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "sparse_rate",
+                "dtype": "float",
+                "value": 0.0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

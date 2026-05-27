@@ -1,0 +1,80 @@
+{
+    "binFileName": "UniqueV2_13f6ba7d0a68b846abe48a79e5833d29",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "UniqueV2_13f6ba7d0a68b846abe48a79e5833d29",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 24,
+    "parameters": [],
+    "sha256": "3f5510cbc4a22b24c84e27020b59936165313a9f4df360261f10a928843185d7",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "taskRation": "0:1",
+    "kernelList": [
+        {
+            "kernelName": "UniqueV2_13f6ba7d0a68b846abe48a79e5833d29_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "UniqueV2/d=0,p=0/6,2/6,2/3,2",
+            "UniqueV2/d=1,p=0/6,2/6,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "814340fe9bf793745f4dbe14c900f21799fca37f2bedabe89734cc094747b5c3",
+        "inputs": [
+            {
+                "name": "input",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "uniqueCnt",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

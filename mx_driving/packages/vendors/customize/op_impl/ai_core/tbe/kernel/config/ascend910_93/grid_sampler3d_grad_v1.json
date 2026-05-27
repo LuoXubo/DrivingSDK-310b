@@ -1,0 +1,86 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GridSampler3dGradV1/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "GridSampler3dGradV1/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "d238d61336eba935f9f30b9f1fe8e1f04055d5f9553a6530948130c79ce77177",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/grid_sampler3d_grad_v1/GridSampler3dGradV1_0250abe04845181c13a3d92d4168e161.json"
+      }
+    }
+  ]
+}

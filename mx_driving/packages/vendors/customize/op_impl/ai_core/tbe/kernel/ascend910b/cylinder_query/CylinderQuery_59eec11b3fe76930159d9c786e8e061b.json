@@ -1,0 +1,137 @@
+{
+    "binFileName": "CylinderQuery_59eec11b3fe76930159d9c786e8e061b",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "CylinderQuery_59eec11b3fe76930159d9c786e8e061b",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 72,
+    "parameters": [],
+    "sha256": "4d300aaaf938fd2291f67bee257cb9e796246a0574c3b098f2fb2c408dc691c8",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "CylinderQuery_59eec11b3fe76930159d9c786e8e061b_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "CylinderQuery/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+            "CylinderQuery/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "74ca470af8e135984491152697f79023120c19b94d49395fd0a62a3952877b59",
+        "inputs": [
+            {
+                "name": "new_xyz",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "xyz",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "rot",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "origin_index",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "point_cloud_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "query_point_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "radius",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "hmin",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "hmax",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "nsample",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

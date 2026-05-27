@@ -33,3 +33,10 @@ class AddReluFunction(Function):
 
 
 npu_add_relu = AddReluFunction.apply
+
+# ===== 310B fallback: AddRelu custom op is not supported on ascend310b =====
+def npu_add_relu(x, y):
+    import torch
+    return torch.relu(x + y)
+# ===== end 310B fallback =====
+

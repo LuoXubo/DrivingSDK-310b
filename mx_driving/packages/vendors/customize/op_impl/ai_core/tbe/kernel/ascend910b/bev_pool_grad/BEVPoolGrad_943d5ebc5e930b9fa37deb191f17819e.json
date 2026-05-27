@@ -1,0 +1,130 @@
+{
+    "binFileName": "BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 72,
+    "parameters": [],
+    "sha256": "c6d0b15c692cff2c87de289f3647ea6b3af5f42dce8a3fafc23a87b71bccc471",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e_3"
+        },
+        {
+            "kernelName": "BEVPoolGrad_943d5ebc5e930b9fa37deb191f17819e_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BEVPoolGrad/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+            "BEVPoolGrad/d=1,p=0/0,2/3,2/3,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "de951a7ac8c41e7164ea67b3fc2a1bb849a69eea7f489e894b80336bb1358502",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "geom_feat",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_lengths",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_starts",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_feat",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "b",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "d",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "h",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "w",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "c",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

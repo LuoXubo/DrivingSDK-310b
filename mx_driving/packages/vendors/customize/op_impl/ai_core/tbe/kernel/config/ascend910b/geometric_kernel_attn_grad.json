@@ -1,0 +1,99 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GeometricKernelAttnGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2",
+        "GeometricKernelAttnGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "fc408603effb429a4b9ca86836a16047ba93907275c74a35844af72e30b14f3b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "spatial_shapes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "level_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_locations",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "attn_weights",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_output",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_attn_weights",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/geometric_kernel_attn_grad/GeometricKernelAttnGrad_bff2618f41526025512441977b5b2289.json"
+      }
+    }
+  ]
+}

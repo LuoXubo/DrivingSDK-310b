@@ -1,0 +1,122 @@
+{
+    "binFileName": "VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 56,
+    "parameters": [],
+    "sha256": "2d6401edaff81504222cf568048bcca7d6833dcda9661da00d5e004d4667b507",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "VoxelPoolingTrain/d=0,p=0/3,2/0,2/0,2/3,2",
+            "VoxelPoolingTrain/d=1,p=0/3,2/0,2/0,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "4d5dfcc8fe0c47f31e5327f9dc61c8941d1e08a319323c7b663278f92a518097",
+        "inputs": [
+            {
+                "name": "geom",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "input_features",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output_features",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pos_memo",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_points",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_channels",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_voxel_x",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_voxel_y",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_voxel_z",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "binFileName": "BorderAlignGrad_e2a9a054414b5f883544c0096951bcad",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BorderAlignGrad_e2a9a054414b5f883544c0096951bcad",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 56,
+    "parameters": [],
+    "sha256": "84a2e1e7f75f04248bd80e161f01d8fb99441bc5ae3ac3a0721e9f2c52c7a138",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BorderAlignGrad_e2a9a054414b5f883544c0096951bcad_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BorderAlignGrad/d=0,p=0/0,2/0,2/3,2/0,2",
+            "BorderAlignGrad/d=1,p=0/0,2/0,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "3a43db92e76b2903396824317ea8cbb8d29173b3376d7eacff6931111f0af628",
+        "inputs": [
+            {
+                "name": "gradOut",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "boxes",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "argmaxIdx",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "gradInput",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "channels",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "boxSize",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "height",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "width",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "poolSize",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "batchSize",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

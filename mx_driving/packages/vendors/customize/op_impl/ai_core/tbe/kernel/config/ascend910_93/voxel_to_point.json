@@ -1,0 +1,56 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "VoxelToPoint/d=0,p=0/3,2/3,2",
+        "VoxelToPoint/d=1,p=0/3,2/3,2"
+      ],
+      "staticKey": "f5d98af0ae87dbacd63d4c5119821c602f237773658c04f9f486cb4dffc8283a",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "voxels",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "voxel_sizes",
+          "dtype": "list_float",
+          "value": []
+        },
+        {
+          "name": "coor_ranges",
+          "dtype": "list_float",
+          "value": []
+        },
+        {
+          "name": "layout",
+          "dtype": "str",
+          "value": ""
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/voxel_to_point/VoxelToPoint_d760c003a26684871b5b4c463740cf2c.json"
+      }
+    }
+  ]
+}

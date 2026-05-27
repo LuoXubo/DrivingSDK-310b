@@ -1,0 +1,109 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "MultiScaleDeformableAttnGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttnGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "96e6d412b727f892c0904d5df0144a42deda8f8ca93f9c2f121fa213748aec1b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "spatial_shapes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "level_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_loc",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "attn_weight",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_output",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_sampling_loc",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_attn_weight",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/multi_scale_deformable_attn_grad/MultiScaleDeformableAttnGrad_c4f992dbc82702901470727678613f8b.json"
+      }
+    }
+  ]
+}

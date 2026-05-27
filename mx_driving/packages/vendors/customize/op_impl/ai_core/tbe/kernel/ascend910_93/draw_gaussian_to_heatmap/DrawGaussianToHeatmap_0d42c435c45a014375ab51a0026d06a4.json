@@ -1,0 +1,117 @@
+{
+    "binFileName": "DrawGaussianToHeatmap_0d42c435c45a014375ab51a0026d06a4",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "DrawGaussianToHeatmap_0d42c435c45a014375ab51a0026d06a4",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 40,
+    "parameters": [],
+    "sha256": "bdb8b5b8189b1b97426e7f59b8ede5527efa8958c170947ec9043401724fcdb0",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "DrawGaussianToHeatmap_0d42c435c45a014375ab51a0026d06a4_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DrawGaussianToHeatmap/d=0,p=0/4,2/3,2/3,2/3,2/0,2",
+            "DrawGaussianToHeatmap/d=1,p=0/4,2/3,2/3,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "6a04df6e8667d9ca8d7f2f5b9604a536a1829b20fd6b75c2a7cdf7de33c18244",
+        "inputs": [
+            {
+                "name": "mask",
+                "index": 0,
+                "dtype": "uint8",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "cur_class_id",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "center_int",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "radius",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "heatmap",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "num_classes",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "feature_map_size_x",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "feature_map_size_y",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

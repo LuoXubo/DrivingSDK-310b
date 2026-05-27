@@ -1,0 +1,137 @@
+{
+    "binFileName": "RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 56,
+    "parameters": [],
+    "sha256": "da42545115c351aebc78b2ac3da6852d93151f145c63c7546fbe4994c474fff0",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "RoiawarePool3d_a03dfbbeb6272d1c98cacf5ddbbcfcbb_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "RoiawarePool3d/d=0,p=0/0,2/0,2/0,2/3,2/3,2/0,2",
+            "RoiawarePool3d/d=1,p=0/0,2/0,2/0,2/3,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "84279da9ab590e5fbb62e8fc4e37fe1986f1ca7b6b5fb93a20a66862fea480e8",
+        "inputs": [
+            {
+                "name": "rois",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pts",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pts_feature",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "argmax",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pts_idx_of_voxels",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pooled_features",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "mode",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "max_pts_each_voxel",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "outx",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "outy",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "outz",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

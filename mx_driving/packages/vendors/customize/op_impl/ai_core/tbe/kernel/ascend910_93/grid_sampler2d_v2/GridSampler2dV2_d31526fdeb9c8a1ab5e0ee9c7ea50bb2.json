@@ -1,0 +1,97 @@
+{
+    "binFileName": "GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 96,
+    "parameters": [],
+    "sha256": "4cb36879e188e2910098c85c535dfe650e55927bf0175d3be5f24e6bbcbb4fdd",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "GridSampler2dV2/d=0,p=0/0,2/0,2/0,2",
+            "GridSampler2dV2/d=1,p=0/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "c3fbdb75b38ffeaef5c91ec26c93b597a0e4c15d3b41b229b87b5b38aeb06f50",
+        "inputs": [
+            {
+                "name": "x_trans",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grid",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "y_trans",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "interpolation_mode",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "padding_mode",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "align_corners",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

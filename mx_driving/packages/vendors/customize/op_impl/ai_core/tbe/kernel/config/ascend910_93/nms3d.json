@@ -1,0 +1,88 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "Nms3d/d=0,p=0/1,2/6,2",
+        "Nms3d/d=1,p=0/1,2/6,2"
+      ],
+      "staticKey": "72708be9b1f4f5c6d235954e368f12591044c5d84c26f34454a0f9fdf001c1c6",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/nms3d/Nms3d_8d0324a109a953bb69417bb41c09c855.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "Nms3d/d=0,p=0/0,2/6,2",
+        "Nms3d/d=1,p=0/0,2/6,2"
+      ],
+      "staticKey": "f6ee58275fc1f09b1e2fecc654f08f4b0e23925c38865b6776f7d5d42a0c9aaf",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/nms3d/Nms3d_06543d9706f814489612d70e4f06eae2.json"
+      }
+    }
+  ]
+}

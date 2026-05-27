@@ -1,0 +1,66 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GridSampler2dV2/d=0,p=0/0,2/0,2/0,2",
+        "GridSampler2dV2/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "c3fbdb75b38ffeaef5c91ec26c93b597a0e4c15d3b41b229b87b5b38aeb06f50",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x_trans",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y_trans",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2d_v2/GridSampler2dV2_d31526fdeb9c8a1ab5e0ee9c7ea50bb2.json"
+      }
+    }
+  ]
+}

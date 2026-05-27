@@ -1,0 +1,44 @@
+{
+  "MaxPool2d": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 1,
+        "simplifiedKey": "MaxPool2d/d=0,p=0/1,2/1,2",
+        "binPath": "ascend310p/max_pool2d/MaxPool2d_e875f437dd4591906107c7f4e3f7eea0.o"
+      },
+      {
+        "coreType": 1,
+        "simplifiedKey": "MaxPool2d/d=1,p=0/1,2/1,2",
+        "binPath": "ascend310p/max_pool2d/MaxPool2d_e875f437dd4591906107c7f4e3f7eea0.o"
+      },
+      {
+        "coreType": 1,
+        "simplifiedKey": "MaxPool2d/d=0,p=0/0,2/0,2",
+        "binPath": "ascend310p/max_pool2d/MaxPool2d_8204ccc9e48524fd9e8969445b1f426a.o"
+      },
+      {
+        "coreType": 1,
+        "simplifiedKey": "MaxPool2d/d=1,p=0/0,2/0,2",
+        "binPath": "ascend310p/max_pool2d/MaxPool2d_8204ccc9e48524fd9e8969445b1f426a.o"
+      }
+    ]
+  },
+  "MultiScaleDeformableAttn": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 1,
+        "simplifiedKey": "MultiScaleDeformableAttn/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend310p/multi_scale_deformable_attn/MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35.o"
+      },
+      {
+        "coreType": 1,
+        "simplifiedKey": "MultiScaleDeformableAttn/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "binPath": "ascend310p/multi_scale_deformable_attn/MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35.o"
+      }
+    ]
+  }
+}

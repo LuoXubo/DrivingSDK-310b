@@ -1,0 +1,93 @@
+{
+    "binFileName": "FurthestPointSampling_f514f7fe46409d857474e77d3c722192",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "FurthestPointSampling_f514f7fe46409d857474e77d3c722192",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 56,
+    "parameters": [],
+    "sha256": "cc3a22c60b0d9d4e7b97bf37e122002dcfd0b2230bbeb691edc85cc465a54b83",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "FurthestPointSampling_f514f7fe46409d857474e77d3c722192_0"
+        },
+        {
+            "kernelName": "FurthestPointSampling_f514f7fe46409d857474e77d3c722192_1"
+        },
+        {
+            "kernelName": "FurthestPointSampling_f514f7fe46409d857474e77d3c722192_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "FurthestPointSampling/d=0,p=0/0,2/0,2/3,2",
+            "FurthestPointSampling/d=1,p=0/0,2/0,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "b321076da12b03c89223075706f8cca1f4de156b6e240cfc3a2d3fb18065fe8a",
+        "inputs": [
+            {
+                "name": "point_xyz",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "nearest_temp",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "index",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "num_points",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

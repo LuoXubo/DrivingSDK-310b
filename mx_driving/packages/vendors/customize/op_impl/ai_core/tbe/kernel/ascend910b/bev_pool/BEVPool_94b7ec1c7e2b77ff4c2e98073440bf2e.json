@@ -1,0 +1,130 @@
+{
+    "binFileName": "BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 72,
+    "parameters": [],
+    "sha256": "e5b459f7810ed3f682c60375ce6c8a40fb47e0341943c409881048c0448cac8a",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e_3"
+        },
+        {
+            "kernelName": "BEVPool_94b7ec1c7e2b77ff4c2e98073440bf2e_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BEVPool/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+            "BEVPool/d=1,p=0/0,2/3,2/3,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "de951a7ac8c41e7164ea67b3fc2a1bb849a69eea7f489e894b80336bb1358502",
+        "inputs": [
+            {
+                "name": "feat",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "geom_feat",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_lengths",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_starts",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "b",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "d",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "h",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "w",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "c",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

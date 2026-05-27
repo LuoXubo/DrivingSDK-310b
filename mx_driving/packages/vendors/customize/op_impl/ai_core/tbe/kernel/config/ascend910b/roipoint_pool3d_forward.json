@@ -1,0 +1,148 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "RoipointPool3dForward/d=0,p=0/0,2/0,2/0,2/0,2/3,2",
+        "RoipointPool3dForward/d=1,p=0/0,2/0,2/0,2/0,2/3,2"
+      ],
+      "staticKey": "cceb09e946e8d595bac49baa36839fe83dfeb7ce03299b38546f058316a94d0e",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "point_features",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "boxes3d",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pooled_features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pooled_empty_flag",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_sampled_points",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_68efd879cae6d95ff4bb33b5990f5335.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "RoipointPool3dForward/d=0,p=0/1,2/1,2/1,2/1,2/3,2",
+        "RoipointPool3dForward/d=1,p=0/1,2/1,2/1,2/1,2/3,2"
+      ],
+      "staticKey": "a5e9e3e2c1f960d762d0310c37af7d9af757387ef02074e2cfa493760d0687f0",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "point_features",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "boxes3d",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pooled_features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pooled_empty_flag",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_sampled_points",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roipoint_pool3d_forward/RoipointPool3dForward_bbf824a985ca7e4a7f518c38b068b9cf.json"
+      }
+    }
+  ]
+}

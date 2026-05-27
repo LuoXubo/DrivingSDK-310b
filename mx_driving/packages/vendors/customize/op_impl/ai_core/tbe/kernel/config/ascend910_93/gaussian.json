@@ -1,0 +1,141 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "Gaussian/d=0,p=0/0,2/3,2/3,2/4,2/3,2/0,2",
+        "Gaussian/d=1,p=0/0,2/3,2/3,2/4,2/3,2/0,2"
+      ],
+      "staticKey": "96f7c26cd2a912bd5ad47a947b1eb01cf4df996a27288a262278202d876e8357",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "gt_boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "center_int",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "radius",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ind",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ret_boxes",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "feature_map_stride",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "gaussian_overlap",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "min_radius",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_max_objs",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "voxel_size_x",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "voxel_size_y",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pc_range_x",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pc_range_y",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "feature_map_size_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "feature_map_size_y",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "norm_bbox",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "flip_angle",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/gaussian/Gaussian_7848738e0dbe97cdd0cd0d05fc521234.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "RoiawareMaxpool3dGrad/d=0,p=0/3,2/0,2/0,2",
+        "RoiawareMaxpool3dGrad/d=1,p=0/3,2/0,2/0,2"
+      ],
+      "staticKey": "40f8852a46692a47bbcb0c52399d01d7806196aa37ab45a89d1df9f663e74c40",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "argmax",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_in",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "boxes_num",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_y",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_z",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "channels",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "npoints",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roiaware_maxpool3d_grad/RoiawareMaxpool3dGrad_b1f3753a48be24f4be4fa58f3c6b3dc7.json"
+      }
+    }
+  ]
+}

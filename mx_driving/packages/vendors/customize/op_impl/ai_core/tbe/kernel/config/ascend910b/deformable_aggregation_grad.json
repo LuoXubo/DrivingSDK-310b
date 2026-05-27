@@ -1,0 +1,214 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DeformableAggregationGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "DeformableAggregationGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "96e6d412b727f892c0904d5df0144a42deda8f8ca93f9c2f121fa213748aec1b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "mc_ms_feat",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "spatial_shape",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_location",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weights",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_output",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_mc_ms_feat",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_sampling_location",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_weights",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_15cd5a57aedc679c20eb141acbdbce6e.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "DeformableAggregationGrad/d=0,p=0/1,2/3,2/3,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "DeformableAggregationGrad/d=1,p=0/1,2/3,2/3,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "746996bb43428fbd4def19e6c510fed0a0b6c28beb10c0a9c285b25d20d8c641",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "mc_ms_feat",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "spatial_shape",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_location",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weights",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_output",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_mc_ms_feat",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_sampling_location",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_weights",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/deformable_aggregation_grad/DeformableAggregationGrad_1885f5054521a204bc836ab0f95975de.json"
+      }
+    }
+  ]
+}

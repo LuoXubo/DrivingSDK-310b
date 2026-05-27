@@ -1,0 +1,89 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "CalcPolyStartEndSl/d=0,p=0/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "CalcPolyStartEndSl/d=1,p=0/3,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "00c1704d226f193608d6574bad34417cdd580a03a18277641c40f32f46018c72",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "min_idx",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "poly_line",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "points",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s_cum",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "poly_start",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "poly_end",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sl",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/calc_poly_start_end_sl/CalcPolyStartEndSl_665cfff83cfcb1a3aeb8639f684e4863.json"
+      }
+    }
+  ]
+}

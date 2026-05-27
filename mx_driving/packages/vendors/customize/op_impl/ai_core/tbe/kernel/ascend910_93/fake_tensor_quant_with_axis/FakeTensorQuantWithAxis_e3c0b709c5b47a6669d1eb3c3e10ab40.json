@@ -1,0 +1,105 @@
+{
+    "binFileName": "FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 56,
+    "parameters": [],
+    "sha256": "c94887d2145119f3ac45661b64b8ed9f42eb4fb9bb5b1dc3c91737d1aebc4287",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40_1"
+        },
+        {
+            "kernelName": "FakeTensorQuantWithAxis_e3c0b709c5b47a6669d1eb3c3e10ab40_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "FakeTensorQuantWithAxis/d=0,p=0/1,2/1,2/1,2",
+            "FakeTensorQuantWithAxis/d=1,p=0/1,2/1,2/1,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "09809c8a8222856f10ac6e8629cec7076f16061b647133a5fa123b20d27d922c",
+        "inputs": [
+            {
+                "name": "inputs",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "amax",
+                "index": 1,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "axis",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_bits",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "is_unsigned",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "narrow_range",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

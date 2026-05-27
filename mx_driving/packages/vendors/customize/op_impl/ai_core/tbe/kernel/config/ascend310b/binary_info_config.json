@@ -1,0 +1,18 @@
+{
+  "BEVPoolV3": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3/d=0,p=0/0,2/3,2/0,2",
+        "binPath": "ascend310b/bev_pool_v3/BEVPoolV3_71726767828dd2d7d53bbf21a3974f51.o"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": "BEVPoolV3/d=1,p=0/0,2/3,2/0,2",
+        "binPath": "ascend310b/bev_pool_v3/BEVPoolV3_71726767828dd2d7d53bbf21a3974f51.o"
+      }
+    ]
+  }
+}

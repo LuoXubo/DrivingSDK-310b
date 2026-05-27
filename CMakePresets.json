@@ -23,7 +23,7 @@
                 },
                 "ASCEND_COMPUTE_UNIT": {
                     "type": "STRING",
-                    "value": "ascend910b;ascend910;ascend310p;ascend910_93"
+                    "value": "ascend910b;ascend910;ascend310p;ascend310b;ascend910_93"
                 },
                 "ASCEND_COMPUTE_UNIT_ARCH35": {
                     "type": "STRING",

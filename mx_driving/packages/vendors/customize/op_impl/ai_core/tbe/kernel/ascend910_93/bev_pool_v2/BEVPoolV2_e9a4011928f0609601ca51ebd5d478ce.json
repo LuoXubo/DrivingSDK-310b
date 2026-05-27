@@ -1,0 +1,160 @@
+{
+    "binFileName": "BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 72,
+    "parameters": [],
+    "sha256": "310e1bfe0a6e0bf48e47b7ac8e339a8e745ac5f730f7b6a93277c50bb9d0d07e",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce_3"
+        },
+        {
+            "kernelName": "BEVPoolV2_e9a4011928f0609601ca51ebd5d478ce_2"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BEVPoolV2/d=0,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2",
+            "BEVPoolV2/d=1,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "7acc5178164f365e12dda0c5ce566fc22760d0fc0e2783cec0e1827d9df01b05",
+        "inputs": [
+            {
+                "name": "depth",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "feat",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_depth",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_feat",
+                "index": 3,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "ranks_bev",
+                "index": 4,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_lengths",
+                "index": 5,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "interval_starts",
+                "index": 6,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "b",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "d",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "h",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "w",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "c",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

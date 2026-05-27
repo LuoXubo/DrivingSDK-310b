@@ -1,0 +1,121 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "HardVoxelize/d=0,p=0/0,2/3,2/3,2/3,2/3,2/0,2/3,2/3,2",
+        "HardVoxelize/d=1,p=0/0,2/3,2/3,2/3,2/3,2/0,2/3,2/3,2"
+      ],
+      "staticKey": "842e10da675891c0360b287ebb9cb52feee43735db1aa498d6632515b4a0d4c8",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uni_voxels",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argsort_voxel_idices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uni_argsort_idices",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uni_indices",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "voxels",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "num_points_per_voxel",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_uni_voxels",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_voxels",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "max_voxels",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "max_points",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_points",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/hard_voxelize/HardVoxelize_4ca48d9f18d94250757c81828038052d.json"
+      }
+    }
+  ]
+}

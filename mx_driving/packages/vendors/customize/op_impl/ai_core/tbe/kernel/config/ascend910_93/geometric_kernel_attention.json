@@ -1,0 +1,79 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GeometricKernelAttention/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "GeometricKernelAttention/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "9f6d20e386208d39577b86f58608780f93609e43c4ecc4374e537f76633a9a04",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "spatial_shapes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "level_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_locations",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "attention_weights",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/geometric_kernel_attention/GeometricKernelAttention_938beb077bee346a89430663d46b1cbb.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "RoiawareAvgpool3dGrad/d=0,p=0/3,2/0,2/0,2",
+        "RoiawareAvgpool3dGrad/d=1,p=0/3,2/0,2/0,2"
+      ],
+      "staticKey": "6896dfb8143696417ae24a0748f69f9ace05f2ab6d1d0a703028023f5fc9175c",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "pts_idx_of_voxels",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_out",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_in",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "boxes_num",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_y",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "out_z",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "channels",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "npoints",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "max_pts_per_voxel",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/roiaware_avgpool3d_grad/RoiawareAvgpool3dGrad_408d14a5963c7791d44062aaf1202d6f.json"
+      }
+    }
+  ]
+}

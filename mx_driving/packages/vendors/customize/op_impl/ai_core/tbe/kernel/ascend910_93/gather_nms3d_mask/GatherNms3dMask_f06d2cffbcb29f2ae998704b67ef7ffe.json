@@ -1,0 +1,80 @@
+{
+    "binFileName": "GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 16,
+    "parameters": [],
+    "sha256": "2e3ac0fff0681a2ce8cc05c0d6451999b20215bfce6d0684e9016fcb874fd2f1",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "GatherNms3dMask/d=0,p=0/6,2/6,2/6,2",
+            "GatherNms3dMask/d=1,p=0/6,2/6,2/6,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "07b3425681655268e881d4f6ccef49cc6307c21cd557710919b3ca1938d3e910",
+        "inputs": [
+            {
+                "name": "mask",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "keep",
+                "index": 0,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "num_out",
+                "index": 1,
+                "dtype": "int16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

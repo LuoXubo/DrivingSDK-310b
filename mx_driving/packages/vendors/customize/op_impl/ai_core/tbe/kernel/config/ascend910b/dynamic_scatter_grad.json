@@ -1,0 +1,76 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DynamicScatterGrad/d=0,p=0/0,2/3,2/3,2/4,2/0,2",
+        "DynamicScatterGrad/d=1,p=0/0,2/3,2/3,2/4,2/0,2"
+      ],
+      "staticKey": "104fab374c5cbf20a5005636bad13ef6b06a5538812546ce95025168b77df0ee",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "grad_voxel_feats",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "num_point_per_voxel",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argsort_coor",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "compare_mask",
+          "index": 3,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_feats",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce_type",
+          "dtype": "str",
+          "value": ""
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_scatter_grad/DynamicScatterGrad_0a427577a707fde753c5a29350162245.json"
+      }
+    }
+  ]
+}

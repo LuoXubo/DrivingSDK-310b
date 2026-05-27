@@ -1,0 +1,49 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GatherNms3dMask/d=0,p=0/6,2/6,2/6,2",
+        "GatherNms3dMask/d=1,p=0/6,2/6,2/6,2"
+      ],
+      "staticKey": "07b3425681655268e881d4f6ccef49cc6307c21cd557710919b3ca1938d3e910",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keep",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "num_out",
+          "index": 1,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_nms3d_mask/GatherNms3dMask_f06d2cffbcb29f2ae998704b67ef7ffe.json"
+      }
+    }
+  ]
+}

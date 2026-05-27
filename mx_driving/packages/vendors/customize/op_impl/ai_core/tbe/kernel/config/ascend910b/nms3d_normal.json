@@ -1,0 +1,88 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "Nms3dNormal/d=0,p=0/1,2/6,2",
+        "Nms3dNormal/d=1,p=0/1,2/6,2"
+      ],
+      "staticKey": "72708be9b1f4f5c6d235954e368f12591044c5d84c26f34454a0f9fdf001c1c6",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "nms_overlap_thresh",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms3d_normal/Nms3dNormal_835ffe0dcca7e2c0f603bad61a8613e8.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "Nms3dNormal/d=0,p=0/0,2/6,2",
+        "Nms3dNormal/d=1,p=0/0,2/6,2"
+      ],
+      "staticKey": "f6ee58275fc1f09b1e2fecc654f08f4b0e23925c38865b6776f7d5d42a0c9aaf",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "nms_overlap_thresh",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms3d_normal/Nms3dNormal_ad62e24511fb8eebc99fabd73d329b4b.json"
+      }
+    }
+  ]
+}

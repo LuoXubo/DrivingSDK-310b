@@ -1,0 +1,274 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/1,2/1,2/3,2",
+        "UniqueV2/d=1,p=0/1,2/1,2/3,2"
+      ],
+      "staticKey": "aa3f668d7d56b67f0c7b71e63b710e661f5ad22d1572b8eb9e388ec9d4fa454e",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_3be1faeeb0f12b09c1f48fd589cab344.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/0,2/0,2/3,2",
+        "UniqueV2/d=1,p=0/0,2/0,2/3,2"
+      ],
+      "staticKey": "327c3f8022e5206e39a791cff74b1f43d127d3fa87a94bd24c623535ad7eb29f",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_66f8119b4fb611c7783692c6f6dc86d7.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/3,2/3,2/3,2",
+        "UniqueV2/d=1,p=0/3,2/3,2/3,2"
+      ],
+      "staticKey": "1e8bc04959818ca1b602a8c01b8e71d1be378f2d83b06b868cef5631c2421e03",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_1fc6dbc7f10705a99a4fadc232ed345c.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/9,2/9,2/3,2",
+        "UniqueV2/d=1,p=0/9,2/9,2/3,2"
+      ],
+      "staticKey": "b0d7afaf4cbed431f446b716bd5cd9f7f065a6a68dcb9d22a2c69ac788e2090e",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_7ef2bad93b2ac7e2082f1e07152f88e5.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/6,2/6,2/3,2",
+        "UniqueV2/d=1,p=0/6,2/6,2/3,2"
+      ],
+      "staticKey": "814340fe9bf793745f4dbe14c900f21799fca37f2bedabe89734cc094747b5c3",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_13f6ba7d0a68b846abe48a79e5833d29.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "UniqueV2/d=0,p=0/27,2/27,2/3,2",
+        "UniqueV2/d=1,p=0/27,2/27,2/3,2"
+      ],
+      "staticKey": "c79a2216bd12cb1a22b6178384708a6c6b4676395b927732ba0ded5da1751d34",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uniqueCnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_v2/UniqueV2_eadd5b5c728391663a66b9f45d4a47a5.json"
+      }
+    }
+  ]
+}

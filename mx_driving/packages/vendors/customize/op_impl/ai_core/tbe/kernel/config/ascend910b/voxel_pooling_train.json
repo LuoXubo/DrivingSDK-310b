@@ -1,0 +1,91 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "VoxelPoolingTrain/d=0,p=0/3,2/0,2/0,2/3,2",
+        "VoxelPoolingTrain/d=1,p=0/3,2/0,2/0,2/3,2"
+      ],
+      "staticKey": "4d5dfcc8fe0c47f31e5327f9dc61c8941d1e08a319323c7b663278f92a518097",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "geom",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_memo",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_points",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_channels",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_voxel_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_voxel_y",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_voxel_z",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/voxel_pooling_train/VoxelPoolingTrain_ac19e9b9c9b77637ca481143a083cbfe.json"
+      }
+    }
+  ]
+}

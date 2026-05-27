@@ -1,0 +1,137 @@
+{
+    "binFileName": "AssignScoreWithk_6115fe3fd950684b9790474344dabaa7",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "AssignScoreWithk_6115fe3fd950684b9790474344dabaa7",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 96,
+    "parameters": [],
+    "sha256": "8d5a629b5d0020badb97a5deb1f894a54d08929dd0141bd873130acaa2b3197b",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "AssignScoreWithk_6115fe3fd950684b9790474344dabaa7_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "AssignScoreWithk/d=0,p=0/0,2/0,2/0,2/9,2/0,2",
+            "AssignScoreWithk/d=1,p=0/0,2/0,2/0,2/9,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "bd1297241b6ab0daf1549f7e739ba672e9f1b0047e79728217629e69c6311c3b",
+        "inputs": [
+            {
+                "name": "points",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "centers",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "scores",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "knn_idx",
+                "index": 3,
+                "dtype": "int64",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "nsource",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "npoint",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_weights",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_neighbors",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_features",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aggregate",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

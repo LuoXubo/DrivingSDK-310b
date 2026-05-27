@@ -1,0 +1,117 @@
+{
+    "binFileName": "DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 64,
+    "parameters": [],
+    "sha256": "205a766fe055a71c8cad05a2b6fd3dd9ac17d3d9eaefc62ffbc20ea11d8bc52c",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DynamicVoxelization/d=0,p=0/0,2/3,2",
+            "DynamicVoxelization/d=1,p=0/0,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "be884794187958c5166bf210a145957b9ee8c390b6117c9761e0f0038371877b",
+        "inputs": [
+            {
+                "name": "points",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "coors",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "coors_min_x",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "coors_min_y",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "coors_min_z",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "voxel_x",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "voxel_y",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "voxel_z",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "grid_x",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "grid_y",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "grid_z",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

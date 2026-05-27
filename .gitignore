@@ -6,3 +6,8 @@ build
 *.egg-info/
 .vscode/
 CMakeFiles
+build_310b
+cmake
+docker
+*.cmake
+*.log

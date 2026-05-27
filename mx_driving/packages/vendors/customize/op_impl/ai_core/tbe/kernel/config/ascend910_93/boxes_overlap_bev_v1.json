@@ -1,0 +1,76 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "BoxesOverlapBevV1/d=0,p=0/0,2/0,2/0,2",
+        "BoxesOverlapBevV1/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "fad5b3c96f344d6577a0ac9ee2d243fa00e98ac982138bc4e1795c3758e1e7b8",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes_a",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "boxes_b",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "res",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "format_flag",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "clockwise",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "mode_flag",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "margin",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/boxes_overlap_bev_v1/BoxesOverlapBevV1_3c9e880bd106939f87cfa14f0bb7e784.json"
+      }
+    }
+  ]
+}

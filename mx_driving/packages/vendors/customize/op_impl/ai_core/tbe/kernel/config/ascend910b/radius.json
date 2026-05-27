@@ -1,0 +1,101 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "Radius/d=0,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2",
+        "Radius/d=1,p=0/0,2/0,2/3,2/3,2/3,2/3,2/3,2"
+      ],
+      "staticKey": "5a05ac1b139afcfaa7eeb5d4c53244b661ae0d11cbd8f39cdd18806bbdf939eb",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ptr_x",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ptr_y",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out_temp",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_final",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "actual_num_neighbors",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "r",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "max_num_neighbors",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/radius/Radius_2a105487e04e237c75c91b5fe86544d0.json"
+      }
+    }
+  ]
+}

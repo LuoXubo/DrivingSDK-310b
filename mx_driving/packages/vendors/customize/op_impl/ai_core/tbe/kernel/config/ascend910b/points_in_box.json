@@ -1,0 +1,49 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "PointsInBox/d=0,p=0/0,2/0,2/3,2",
+        "PointsInBox/d=1,p=0/0,2/0,2/3,2"
+      ],
+      "staticKey": "7543203b5fd512f006652ff510047d03be2a1d693c8c6b8fb0e6cfdcf4d395a9",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pts",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "boxes_idx_of_points",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/points_in_box/PointsInBox_e17af9bd05dc6093f6593594fcf8db8e.json"
+      }
+    }
+  ]
+}

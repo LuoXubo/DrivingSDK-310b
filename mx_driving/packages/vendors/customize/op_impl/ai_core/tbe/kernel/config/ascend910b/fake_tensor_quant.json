@@ -1,0 +1,128 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "FakeTensorQuant/d=0,p=0/0,2/0,2/0,2",
+        "FakeTensorQuant/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "6511e894d3ef92c80df320cb2d84bc19f9c1285ee3da05c00221b41cd912bd94",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "inputs",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "amax",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_bits",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "is_unsigned",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "narrow_range",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fake_tensor_quant/FakeTensorQuant_c64ac893d651a615ed8485dd77dc6204.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "FakeTensorQuant/d=0,p=0/1,2/1,2/1,2",
+        "FakeTensorQuant/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "4208643043fd37f9114f696cdb72a8d5bd77ab1c09e314be28d2348d11651440",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "inputs",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "amax",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_bits",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "is_unsigned",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "narrow_range",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fake_tensor_quant/FakeTensorQuant_b00da269c9a4af6913eee040efd90fe9.json"
+      }
+    }
+  ]
+}

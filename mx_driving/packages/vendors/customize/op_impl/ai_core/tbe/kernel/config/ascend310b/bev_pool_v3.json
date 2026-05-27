@@ -1,0 +1,111 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "BEVPoolV3/d=0,p=0/0,2/3,2/0,2",
+        "BEVPoolV3/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "staticKey": "a7276781bdd8830f5b410767fb484a0db90b2acf372936c5fb6f6ecea0457252",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "depth",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "feat",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_depth",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_feat",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_bev",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "with_depth",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "b",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "d",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "h",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "w",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "c",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend310b/bev_pool_v3/BEVPoolV3_71726767828dd2d7d53bbf21a3974f51.json"
+      }
+    }
+  ]
+}

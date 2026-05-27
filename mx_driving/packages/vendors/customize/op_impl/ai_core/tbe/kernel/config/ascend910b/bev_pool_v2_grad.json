@@ -1,0 +1,430 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "BEVPoolV2Grad/d=0,p=0/27,2/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "BEVPoolV2Grad/d=1,p=0/27,2/27,2/27,2/3,2/3,2/3,2/3,2/3,2/27,2/27,2"
+      ],
+      "staticKey": "0de83e4362e62dfdbf6901002e10c893c12c189bb417519975f7e1b8a09cccf5",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "depth",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "feat",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_depth",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_feat",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_bev",
+          "index": 5,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_lengths",
+          "index": 6,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_starts",
+          "index": 7,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_depth",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_feat",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "b",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "d",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "h",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "w",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "c",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_c6d22aa5739ac302a4bf5057978c4b77.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "BEVPoolV2Grad/d=0,p=0/0,2/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2/0,2",
+        "BEVPoolV2Grad/d=1,p=0/0,2/0,2/0,2/3,2/3,2/3,2/3,2/3,2/0,2/0,2"
+      ],
+      "staticKey": "427ab8fb7ee71bd89f645f54015a3ac3c03e8d8dde23b4c44abf389082b9e682",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "depth",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "feat",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_depth",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_feat",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_bev",
+          "index": 5,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_lengths",
+          "index": 6,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_starts",
+          "index": 7,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_depth",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_feat",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "b",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "d",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "h",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "w",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "c",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_da8dbcf0c61295f129369a24ee68452a.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "BEVPoolV2Grad/d=0,p=0/1,2/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "BEVPoolV2Grad/d=1,p=0/1,2/1,2/1,2/3,2/3,2/3,2/3,2/3,2/1,2/1,2"
+      ],
+      "staticKey": "a9caf9d9f57d3e73f89e70a60589b679417e320a7fe29b1088136c6943e9f757",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "depth",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "feat",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_depth",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_feat",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "ranks_bev",
+          "index": 5,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_lengths",
+          "index": 6,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "interval_starts",
+          "index": 7,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_depth",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_feat",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "b",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "d",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "h",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "w",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "c",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bev_pool_v2_grad/BEVPoolV2Grad_a0d0b115730bbed779c7465a5d55a30e.json"
+      }
+    }
+  ]
+}

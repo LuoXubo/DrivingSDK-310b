@@ -1,0 +1,103 @@
+{
+    "binFileName": "ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 216,
+    "parameters": [],
+    "sha256": "5df41e6e752e91ee6cd323df20aa9721c66183126672ceaa7f8bab61f210193b",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7_1"
+        },
+        {
+            "kernelName": "ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7_2"
+        },
+        {
+            "kernelName": "ScatterMeanGrad_712c13e54424c18bf3f076394dd444b7_3"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "ScatterMeanGrad/d=0,p=0/0,2/3,2/0,2/0,2",
+            "ScatterMeanGrad/d=1,p=0/0,2/3,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "6c54a911c8e742d58192c45b2d71f3f94711877056b6613df6d23351ddc17107",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "index",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "count",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_in",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "dim",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

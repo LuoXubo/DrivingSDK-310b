@@ -1,0 +1,362 @@
+{
+  "MaxPool2d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "MultiScaleDeformableAttn": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "AddRelu": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "AssignScoreWithk": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "AssignScoreWithkGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BatchMatmulVector": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPool": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPoolGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPoolV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPoolV2Grad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPoolV3": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BEVPoolV3Grad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BorderAlign": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BorderAlignGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BoxIou": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BoxesOverlapBev": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "BoxesOverlapBevV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "CalAnchorsHeading": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "CalcPolyStartEndSl": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "CartesianToFrenet1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "CylinderQuery": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableAggregation": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableAggregationGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableConv2d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableConv2dGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableConv2dGradV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DeformableConv2dV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DiffIouRotatedSortVertices": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DrawGaussianToHeatmap": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DynamicScatter": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DynamicScatterGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "DynamicVoxelization": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "FakeTensorQuant": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "FakeTensorQuantWithAxis": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "FurthestPointSampling": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "FurthestPointSamplingWithDist": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "FusedBiasLeakyReluV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GatherNms3dMask": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Gaussian": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GeometricKernelAttention": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GeometricKernelAttnGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GraphSoftmax": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GraphSoftmaxGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GridSampler2dV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GridSampler2dV2Grad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GridSampler3dGradV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GroupPoints": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "GroupPointsGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "HardVoxelize": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Hypot": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "HypotGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Knn": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "MultiScaleDeformableAttnGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Nms3d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Nms3dNormal": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Nms3dOnSight": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "PixelGroup": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "PointToVoxel": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "VoxelToPoint": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "PointsInBox": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "PointsInBoxAll": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "Radius": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoiAlignRotatedGradV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoiAlignRotatedV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoiawareAvgpool3dGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoiawareMaxpool3dGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoiawarePool3d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "RoipointPool3dForward": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterAddGradV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterAddV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterMaxV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterMaxArgmaxV1": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterMean": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterMeanDiv": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "ScatterMeanGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SelectIdxWithMask": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SparseConv3d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SparseConv3dGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SparseInverseConv3d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SparseMatmul": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3dGrad": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3dGradV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3d": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3dV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3dV3": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "SubmSparseConv3dWithKey": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "UniqueV2": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "UniqueVoxel": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "VoxelPoolingTrain": {
+    "isGray": false,
+    "isHeavy": false
+  },
+  "VoxelPoolingTrainGrad": {
+    "isGray": false,
+    "isHeavy": false
+  }
+}

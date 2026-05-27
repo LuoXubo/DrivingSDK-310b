@@ -1,0 +1,71 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "SparseConv3d/d=0,p=0/3,2/3,2/3,2",
+        "SparseConv3d/d=1,p=0/3,2/3,2/3,2"
+      ],
+      "staticKey": "76b26889d3f7e86b392bf0251fe2db5cb41b9e95265a945afe96b5f5ed83a234",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "indices_out",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_pair",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "kernel_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "out_spatial_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "padding",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sparse_conv3d/SparseConv3d_4090ce791da85b0d663099821d8841a3.json"
+      }
+    }
+  ]
+}

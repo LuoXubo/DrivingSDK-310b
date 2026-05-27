@@ -1,0 +1,76 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DynamicScatter/d=0,p=0/0,2/3,2/3,2/0,2/4,2",
+        "DynamicScatter/d=1,p=0/0,2/3,2/3,2/0,2/4,2"
+      ],
+      "staticKey": "2e98671e81fd0f2b289d5779b1eee2de9d4931fa2b33f119f055b2be58d2a50e",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "feats",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prefix_sum_point_per_voxel",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argsort_coor",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "voxel_feats",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "compare_mask",
+          "index": 1,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce_type",
+          "dtype": "str",
+          "value": ""
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_scatter/DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+    "binFileName": "MaxPool2d_8204ccc9e48524fd9e8969445b1f426a",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "AiCore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelName": "MaxPool2d_8204ccc9e48524fd9e8969445b1f426a",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 40,
+    "parameters": [],
+    "sha256": "f9e2cc777ae68ae33335e16983572f8cf44792199dcdfedccbc99d2d2218fc48",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "MaxPool2d_8204ccc9e48524fd9e8969445b1f426a_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "MaxPool2d/d=0,p=0/0,2/0,2",
+            "MaxPool2d/d=1,p=0/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "174b597c066dd43443d16f1cbf342fb69d122ca8a248e828c078b208c9bfe6f7",
+        "inputs": [
+            {
+                "name": "x_trans",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "y_trans",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

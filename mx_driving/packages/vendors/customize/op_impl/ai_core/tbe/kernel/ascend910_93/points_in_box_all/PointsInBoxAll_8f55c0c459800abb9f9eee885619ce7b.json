@@ -1,0 +1,80 @@
+{
+    "binFileName": "PointsInBoxAll_8f55c0c459800abb9f9eee885619ce7b",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "PointsInBoxAll_8f55c0c459800abb9f9eee885619ce7b",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 48,
+    "parameters": [],
+    "sha256": "44ef27527e271be6907907710ab5c8448b34a062ee731357cdd1bc1bd87fd914",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "PointsInBoxAll_8f55c0c459800abb9f9eee885619ce7b_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "PointsInBoxAll/d=0,p=0/0,2/0,2/3,2",
+            "PointsInBoxAll/d=1,p=0/0,2/0,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "7543203b5fd512f006652ff510047d03be2a1d693c8c6b8fb0e6cfdcf4d395a9",
+        "inputs": [
+            {
+                "name": "boxes",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "pts",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "boxes_idx_of_points",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,81 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "RoiAlignRotatedV2/d=0,p=0/0,2/0,2/0,2",
+        "RoiAlignRotatedV2/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "fbbf8088ea82653b9b9be9ddbf27daba0fdeddaced13fcbb32551197f8878e6b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "sampling_ratio",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "clockwise",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/roi_align_rotated_v2/RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55.json"
+      }
+    }
+  ]
+}

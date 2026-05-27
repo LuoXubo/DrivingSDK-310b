@@ -1,0 +1,116 @@
+{
+    "binFileName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 48,
+    "parameters": [],
+    "sha256": "32eb4860e145847e8d483cf13d7e63136ffc566228aae88e48a27f8f3e39dd91",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396_0"
+        },
+        {
+            "kernelName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396_1"
+        },
+        {
+            "kernelName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396_2"
+        },
+        {
+            "kernelName": "BoxesOverlapBev_a813c81ca5be8d8b8c51b8bfccd93396_3"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BoxesOverlapBev/d=0,p=0/0,2/0,2/0,2",
+            "BoxesOverlapBev/d=1,p=0/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "fad5b3c96f344d6577a0ac9ee2d243fa00e98ac982138bc4e1795c3758e1e7b8",
+        "inputs": [
+            {
+                "name": "boxes_a",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "boxes_b",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "res",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "format_flag",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "clockwise",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "mode_flag",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aligned",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "margin",
+                "dtype": "float",
+                "value": 0.0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

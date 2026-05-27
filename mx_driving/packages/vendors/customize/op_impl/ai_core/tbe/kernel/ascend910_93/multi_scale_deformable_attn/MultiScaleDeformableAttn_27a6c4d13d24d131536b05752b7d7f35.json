@@ -1,0 +1,135 @@
+{
+    "binFileName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 128,
+    "parameters": [],
+    "sha256": "9fcd2e159f1fd20bc3e47ec10b3823439ece5cbaa79e91f30ed14d18a5dadd7d",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "tilingKey": 11,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35_11"
+        },
+        {
+            "tilingKey": 1,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35_1"
+        },
+        {
+            "tilingKey": 10,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35_10"
+        },
+        {
+            "tilingKey": 0,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "MultiScaleDeformableAttn_27a6c4d13d24d131536b05752b7d7f35_0"
+        }
+    ],
+    "taskRation": "tilingKey",
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "MultiScaleDeformableAttn/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+            "MultiScaleDeformableAttn/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "9f6d20e386208d39577b86f58608780f93609e43c4ecc4374e537f76633a9a04",
+        "inputs": [
+            {
+                "name": "value",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "value_spatial_shapes",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "value_level_start_index",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "sampling_locations",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "attention_weights",
+                "index": 4,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

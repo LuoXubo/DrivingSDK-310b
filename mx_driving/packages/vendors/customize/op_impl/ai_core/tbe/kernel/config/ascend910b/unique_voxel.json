@@ -1,0 +1,89 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "UniqueVoxel/d=0,p=0/0,2/3,2/3,2/3,2/3,2/3,2/3,2",
+        "UniqueVoxel/d=1,p=0/0,2/3,2/3,2/3,2/3,2/3,2/3,2"
+      ],
+      "staticKey": "a0fb69fdfe8e1e8df1233b7a2100ff6e33b5a7912c0b0b06f8ab34a093ce5bdb",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "voxels",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argsort_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "uni_voxels",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uni_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "uni_argsort_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "voxel_num",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/unique_voxel/UniqueVoxel_36767e9212eb70948470a939c2d4d1e4.json"
+      }
+    }
+  ]
+}

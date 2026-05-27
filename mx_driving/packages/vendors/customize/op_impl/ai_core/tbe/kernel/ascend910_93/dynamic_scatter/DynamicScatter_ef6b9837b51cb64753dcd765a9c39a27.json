@@ -1,0 +1,113 @@
+{
+    "binFileName": "DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 104,
+    "parameters": [],
+    "sha256": "16240005cea0420c3a065a8f8897605d0f07f863e8add849845f48b9be631790",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "taskRation": "0:1",
+    "kernelList": [
+        {
+            "kernelName": "DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27_102"
+        },
+        {
+            "kernelName": "DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27_101"
+        },
+        {
+            "kernelName": "DynamicScatter_ef6b9837b51cb64753dcd765a9c39a27_100"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DynamicScatter/d=0,p=0/0,2/3,2/3,2/0,2/4,2",
+            "DynamicScatter/d=1,p=0/0,2/3,2/3,2/0,2/4,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "2e98671e81fd0f2b289d5779b1eee2de9d4931fa2b33f119f055b2be58d2a50e",
+        "inputs": [
+            {
+                "name": "feats",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "prefix_sum_point_per_voxel",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "argsort_coor",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "voxel_feats",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "compare_mask",
+                "index": 1,
+                "dtype": "uint8",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "reduce_type",
+                "dtype": "str",
+                "value": ""
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

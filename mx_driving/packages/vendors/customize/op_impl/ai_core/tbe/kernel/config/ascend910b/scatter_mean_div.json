@@ -1,0 +1,49 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "ScatterMeanDiv/d=0,p=0/0,2/0,2/0,2",
+        "ScatterMeanDiv/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "295935613b943d6a71aa3e5b596ee7da1f284cfde70cbf59960f8c546b5d4d30",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter_mean_div/ScatterMeanDiv_ba2ca7ef957bfd3ad9e22dbbe718496d.json"
+      }
+    }
+  ]
+}

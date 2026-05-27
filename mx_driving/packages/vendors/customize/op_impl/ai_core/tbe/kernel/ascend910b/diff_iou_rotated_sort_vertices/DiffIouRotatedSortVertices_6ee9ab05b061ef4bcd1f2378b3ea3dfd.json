@@ -1,0 +1,90 @@
+{
+    "binFileName": "DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 24,
+    "parameters": [],
+    "sha256": "9f36a6e6a722c42f0b5b00275689b68efced0427bc03ddd7437d47b8a65430b3",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "DiffIouRotatedSortVertices/d=0,p=0/0,2/0,2/3,2/3,2",
+            "DiffIouRotatedSortVertices/d=1,p=0/0,2/0,2/3,2/3,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "e9c236c3baa9b0147fa2239bc7e6209fdce824ce581a2a8c01232f3d0e3f245f",
+        "inputs": [
+            {
+                "name": "vertices",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "mask",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "num_valid",
+                "index": 2,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "sortedIdx",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

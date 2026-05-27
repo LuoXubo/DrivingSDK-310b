@@ -1,0 +1,96 @@
+{
+    "binFileName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 72,
+    "parameters": [],
+    "sha256": "26153b224b2eeb29dacd8a9f1e63145c7d2a1b63e40fba80191243670b9c5d10",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a_0"
+        },
+        {
+            "kernelName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a_1"
+        },
+        {
+            "kernelName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a_2"
+        },
+        {
+            "kernelName": "PointToVoxel_80ab6a33c0e1c8011da8b0fc018abe6a_3"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "PointToVoxel/d=0,p=0/0,2/0,2",
+            "PointToVoxel/d=1,p=0/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "8fb79fa6fd2e3f523181e1cf54dd775973f81d6603509cb019934b4c6a637f87",
+        "inputs": [
+            {
+                "name": "points",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "voxels",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "voxel_sizes",
+                "dtype": "list_float",
+                "value": []
+            },
+            {
+                "name": "coor_ranges",
+                "dtype": "list_float",
+                "value": []
+            },
+            {
+                "name": "layout",
+                "dtype": "str",
+                "value": ""
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

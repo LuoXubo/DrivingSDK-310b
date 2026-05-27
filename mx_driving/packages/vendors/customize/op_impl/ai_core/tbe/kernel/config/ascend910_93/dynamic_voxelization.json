@@ -1,0 +1,86 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DynamicVoxelization/d=0,p=0/0,2/3,2",
+        "DynamicVoxelization/d=1,p=0/0,2/3,2"
+      ],
+      "staticKey": "be884794187958c5166bf210a145957b9ee8c390b6117c9761e0f0038371877b",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "points",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "coors",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "coors_min_x",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "coors_min_y",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "coors_min_z",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "voxel_x",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "voxel_y",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "voxel_z",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "grid_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "grid_y",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "grid_z",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/dynamic_voxelization/DynamicVoxelization_9da4e556049ae297370f9c4e81f6c0b8.json"
+      }
+    }
+  ]
+}

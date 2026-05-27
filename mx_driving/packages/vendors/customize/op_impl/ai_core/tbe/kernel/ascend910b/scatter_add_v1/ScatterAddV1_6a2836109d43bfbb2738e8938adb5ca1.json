@@ -1,0 +1,112 @@
+{
+    "binFileName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 208,
+    "parameters": [],
+    "sha256": "ebdb8dca1fdfca01156e7859ae7bb0f4529e1ac4b9e83388bb2ff1ea3c621e45",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_0"
+        },
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_1"
+        },
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_2"
+        },
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_3"
+        },
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_4"
+        },
+        {
+            "kernelName": "ScatterAddV1_6a2836109d43bfbb2738e8938adb5ca1_5"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "ScatterAddV1/d=0,p=0/0,2/3,2/0,2/0,2",
+            "ScatterAddV1/d=1,p=0/0,2/3,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "6c54a911c8e742d58192c45b2d71f3f94711877056b6613df6d23351ddc17107",
+        "inputs": [
+            {
+                "name": "src",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "indices",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "var",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "dim",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

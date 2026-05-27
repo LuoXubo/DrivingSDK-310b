@@ -1,0 +1,74 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "MaxPool2d/d=0,p=0/1,2/1,2",
+        "MaxPool2d/d=1,p=0/1,2/1,2"
+      ],
+      "staticKey": "6ea53f6da880a8179848e8d27d9656470fcc75d7d663e87a5ddd49a942d586d5",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x_trans",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y_trans",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend310p/max_pool2d/MaxPool2d_e875f437dd4591906107c7f4e3f7eea0.json"
+      }
+    },
+    {
+      "simplifiedKey": [
+        "MaxPool2d/d=0,p=0/0,2/0,2",
+        "MaxPool2d/d=1,p=0/0,2/0,2"
+      ],
+      "staticKey": "174b597c066dd43443d16f1cbf342fb69d122ca8a248e828c078b208c9bfe6f7",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "x_trans",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y_trans",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend310p/max_pool2d/MaxPool2d_8204ccc9e48524fd9e8969445b1f426a.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "SubmSparseConv3d/d=0,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2",
+        "SubmSparseConv3d/d=1,p=0/0,2/3,2/0,2/0,2/0,2/3,2/3,2"
+      ],
+      "staticKey": "898d1d75ebdb9d471dd044722e479865dffd8dec3ad15d1096ff1fe8a8c05c9a",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "feature",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "temp",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "feature_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_offset",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_pair",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "kernel_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "out_channel",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "outSpatialShape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "batch_size",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/subm_sparse_conv3d/SubmSparseConv3d_12e0858d31008a5bdaff9c7d98885d55.json"
+      }
+    }
+  ]
+}

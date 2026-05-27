@@ -1,0 +1,167 @@
+{
+    "binFileName": "AssignScoreWithkGrad_6383c0693754ff188121e4bab31a410e",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "AssignScoreWithkGrad_6383c0693754ff188121e4bab31a410e",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 96,
+    "parameters": [],
+    "sha256": "fac94536df42cf0c3c4a297f973c4f9d7f1404cd2a237a8507178db19ee68d9e",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "AssignScoreWithkGrad_6383c0693754ff188121e4bab31a410e_0"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "AssignScoreWithkGrad/d=0,p=0/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2",
+            "AssignScoreWithkGrad/d=1,p=0/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "da5e8c90f50b0138900d29eb07474bbf046490e23542bb7713a6080e54ef8276",
+        "inputs": [
+            {
+                "name": "grad_out",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "points",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "centers",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "scores",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "knn_idx",
+                "index": 4,
+                "dtype": "int64",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "grad_scores",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grad_points",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "grad_centers",
+                "index": 2,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "batch_size",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "nsource",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "npoint",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_weights",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_neighbors",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "num_features",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aggregate",
+                "dtype": "int",
+                "value": 0
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "binFileName": "BoxIou_10766a380c41a4d497708e8d1814f5c3",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 40,
+    "parameters": [],
+    "sha256": "6cb21c8eecdae3841912d410a0a3ceaea22446ca107732d00b8693085242a69c",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_0"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_1"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_2"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_3"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_4"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_5"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_6"
+        },
+        {
+            "kernelName": "BoxIou_10766a380c41a4d497708e8d1814f5c3_7"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "BoxIou/d=0,p=0/0,2/0,2/0,2",
+            "BoxIou/d=1,p=0/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "c78d7c99b81367c460ee36ebfc9c763276d8beb303e36f9b4c9506379e7c887c",
+        "inputs": [
+            {
+                "name": "boxes_a",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "boxes_b",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "ious",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "mode_flag",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aligned",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

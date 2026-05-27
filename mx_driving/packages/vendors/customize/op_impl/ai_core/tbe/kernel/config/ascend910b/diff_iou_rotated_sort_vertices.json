@@ -1,0 +1,59 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "DiffIouRotatedSortVertices/d=0,p=0/0,2/0,2/3,2/3,2",
+        "DiffIouRotatedSortVertices/d=1,p=0/0,2/0,2/3,2/3,2"
+      ],
+      "staticKey": "e9c236c3baa9b0147fa2239bc7e6209fdce824ce581a2a8c01232f3d0e3f245f",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "vertices",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "num_valid",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sortedIdx",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910b/diff_iou_rotated_sort_vertices/DiffIouRotatedSortVertices_6ee9ab05b061ef4bcd1f2378b3ea3dfd.json"
+      }
+    }
+  ]
+}

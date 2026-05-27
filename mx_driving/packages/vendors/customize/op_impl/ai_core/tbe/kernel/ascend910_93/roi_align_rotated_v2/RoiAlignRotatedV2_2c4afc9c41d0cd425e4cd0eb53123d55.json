@@ -1,0 +1,112 @@
+{
+    "binFileName": "RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "VectorCore",
+    "core_type": "AIV",
+    "intercoreSync": 0,
+    "kernelName": "RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 96,
+    "parameters": [],
+    "sha256": "db9486d5323eb611d1267acf3607955d691383f03598f49533591f86927e6adb",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "kernelName": "RoiAlignRotatedV2_2c4afc9c41d0cd425e4cd0eb53123d55_1"
+        }
+    ],
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "supportSuperKernel": 1,
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "RoiAlignRotatedV2/d=0,p=0/0,2/0,2/0,2",
+            "RoiAlignRotatedV2/d=1,p=0/0,2/0,2/0,2"
+        ],
+        "optionalInputMode": "gen_placeholder",
+        "optionalOutputMode": "gen_placeholder",
+        "staticKey": "fbbf8088ea82653b9b9be9ddbf27daba0fdeddaced13fcbb32551197f8878e6b",
+        "inputs": [
+            {
+                "name": "input",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "rois",
+                "index": 1,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "index": 0,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "spatial_scale",
+                "dtype": "float",
+                "value": 0.0
+            },
+            {
+                "name": "sampling_ratio",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "pooled_height",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "pooled_width",
+                "dtype": "int",
+                "value": 0
+            },
+            {
+                "name": "aligned",
+                "dtype": "bool",
+                "value": false
+            },
+            {
+                "name": "clockwise",
+                "dtype": "bool",
+                "value": false
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    }
+}

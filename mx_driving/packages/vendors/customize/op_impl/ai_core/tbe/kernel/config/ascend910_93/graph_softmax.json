@@ -1,0 +1,56 @@
+{
+  "binList": [
+    {
+      "simplifiedKey": [
+        "GraphSoftmax/d=0,p=0/0,2/3,2/0,2",
+        "GraphSoftmax/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "staticKey": "ba051fdcbc1347b17405933236ef66967921aab2b2068e89bc95e4ae3b10f733",
+      "int64Mode": false,
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax_result",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "N",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "binInfo": {
+        "jsonFilePath": "ascend910_93/graph_softmax/GraphSoftmax_8518172c3115222bfc8b76fc5ae1d445.json"
+      }
+    }
+  ]
+}
