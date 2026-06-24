@@ -310,7 +310,8 @@ def main():
             if meta.get('mIoU') is not None:
                 title += f' mIoU={meta["mIoU"]:.3f}'
             thumbs.append(put_title(thumb, title))
-            meta['panel'] = str((sample_dir / 'detailed_panel.png').relative_to(ROOT))
+            meta['panel'] = os.path.relpath(
+                str(sample_dir / 'detailed_panel.png'), str(ROOT))
             all_meta.append(meta)
 
             print(f'--- sample {idx} ({stem}) ---')
