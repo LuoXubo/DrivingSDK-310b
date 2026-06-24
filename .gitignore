@@ -3,6 +3,7 @@ __pycache__/
 .idea
 cmake-build-debug
 build
+build_onnx_parser/
 *.egg-info/
 .vscode/
 CMakeFiles
@@ -11,3 +12,9 @@ cmake
 docker
 *.cmake
 *.log
+model_examples/FlashOCC/FlashOCC/work_dirs/
+model_examples/FlashOCC/FlashOCC/kernel_meta/
+model_examples/FlashOCC/FlashOCC/check_result.json
+model_examples/FlashOCC/FlashOCC/fusion_result.json
+model_examples/FlashOCC/FlashOCC/ge_check_op.json
+mx_driving/packages/vendors/customize/framework/onnx/
