@@ -55,18 +55,80 @@ class Part1ExportWrapper(nn.Module):
         return self.detector.forward_part1(img)
 
 
-class Part3ExportWrapper(nn.Module):
-    """bev_feat (NCHW) -> occ head output."""
+class Part1EvalAlignedExportWrapper(nn.Module):
+    """part1 aligned with eval extract_img_feat: image_encoder + depth_net (FP32)."""
+
+    def __init__(self, detector):
+        super().__init__()
+        self.detector = detector
+
+    def forward(self, img):
+        if img.dim() == 4 and img.shape[1] == 3:
+            img = img.unsqueeze(0)
+        feat, _ = self.detector.image_encoder(img)
+        b, n, c, h, w = feat.shape
+        x = feat.view(b * n, c, h, w)
+        vt = self.detector.img_view_transformer
+        x = vt.depth_net(x.float())
+        depth = x[:, :vt.D].float().softmax(dim=1)
+        tran_feat = x[:, vt.D:(vt.D + vt.out_channels)].float()
+        tran_feat = tran_feat.permute(0, 2, 3, 1).contiguous()
+        return tran_feat.flatten(0, 2), depth.reshape(-1)
+
+
+def build_part1_wrapper(detector, layout='eval'):
+    if layout == 'eval':
+        return Part1EvalAlignedExportWrapper(detector)
+    return Part1ExportWrapper(detector)
+
+
+def part1_layout_from_manifest(manifest):
+    return manifest.get('part1_img_layout', 'legacy')
+
+
+def _part1_img_from_tensor(imgs, layout='eval'):
+    imgs = imgs.float().contiguous()
+    if layout == 'eval':
+        if imgs.dim() == 4 and imgs.shape[1] == 3:
+            imgs = imgs.unsqueeze(0)
+        if imgs.shape[1] > 6:
+            imgs = imgs[:, :6]
+        return imgs
+    img = imgs.squeeze(0) if imgs.dim() == 5 else imgs
+    if img.shape[0] > 6:
+        img = img[:6]
+    return img
+
+
+class Part3EvalAlignedExportWrapper(nn.Module):
+    """bev_feat (NCHW) -> occ logits via eval bev_encoder + occ_head."""
 
     def __init__(self, detector):
         super().__init__()
         self.detector = detector
 
     def forward(self, bev_feat):
-        outs = self.detector.forward_part3(bev_feat.contiguous().reshape(-1))
+        x = self.detector.bev_encoder(bev_feat)
+        outs = self.detector.occ_head(x)
         if isinstance(outs, (list, tuple)):
-            return tuple(outs)
-        return (outs,)
+            return outs[0]
+        return outs
+
+
+class Part3ExportWrapper(nn.Module):
+    """bev_feat (NCHW) -> occ head output (eval-aligned path)."""
+
+    def __init__(self, detector):
+        super().__init__()
+        self._inner = Part3EvalAlignedExportWrapper(detector)
+
+    def forward(self, bev_feat):
+        occ = self._inner(bev_feat)
+        return (occ,)
+
+
+def build_part3_wrapper(detector):
+    return Part3ExportWrapper(detector)
 
 
 def parse_args():
@@ -112,6 +174,16 @@ def parse_args():
         action='store_false',
         dest='export_on_cpu',
         help='trace ONNX on NPU (legacy)')
+    parser.add_argument(
+        '--part1-layout', default='eval', choices=('eval', 'legacy'),
+        help='eval: (B,N,3,H,W) image_encoder; legacy: forward_part1')
+    parser.add_argument(
+        '--atc-part1-precision', default='force_fp32',
+        choices=('force_fp32', 'allow_fp32_to_fp16'))
+    parser.add_argument(
+        '--atc-part3-precision', default='allow_fp32_to_fp16',
+        choices=('force_fp32', 'allow_fp32_to_fp16'))
+    parser.add_argument('--soc-version', default='Ascend310B1')
     parser.add_argument('--cfg-options', nargs='+', action=DictAction)
     return parser.parse_args()
 
@@ -145,12 +217,10 @@ def _get_sample_batch(data_loader, sample_idx):
     raise IndexError(f'sample_idx={sample_idx} out of range')
 
 
-def _get_bev_pool_metas_v3(model, data, device):
+def _get_bev_pool_metas_v3(model, data, device, layout='eval'):
     """Return img and 3 rank tensors for bev_pool_v3 (NPU training path)."""
     inputs = _to_device(data['img_inputs'][0], device)
-    img = inputs[0].squeeze(0).float().contiguous()
-    if img.shape[0] > 6:
-        img = img[:6]
+    img = _part1_img_from_tensor(inputs[0], layout=layout)
     metas = model.get_bev_pool_input(inputs)
     if isinstance(metas, torch.Tensor):
         metas = (metas,)
@@ -371,22 +441,61 @@ def _write_manifest(work_dir, prefix, manifest):
     print(f'Wrote manifest: {path}')
 
 
+def _atc_precision_flags(precision_mode, hp_ops=None):
+    flags = f'--precision_mode={precision_mode}'
+    if hp_ops and precision_mode != 'force_fp32':
+        flags += (
+            f' --op_select_implmode=high_precision'
+            f' --optypelist_for_implmode="{hp_ops}"')
+    return flags
+
+
+def _verify_om_part1(part1_om, part1, img, device, rtol=1e-2, atol=1e-3):
+    from tools.run_split_infer_npu import AclSession
+
+    if not os.path.isfile(part1_om):
+        warnings.warn(f'part1 OM not found, skip verify: {part1_om}')
+        return
+    gpu_id = int(str(device).split(':')[-1]) if 'npu' in str(device) else 0
+    acl = AclSession(device_id=gpu_id)
+    acl.load('part1', part1_om)
+    try:
+        img_np = img.detach().cpu().numpy().astype(np.float32)
+        om_tran, om_depth = acl.infer('part1', img_np)
+        with torch.no_grad():
+            pt_tran, pt_depth = part1(img.to(device))
+        tf_diff = float(np.max(np.abs(
+            pt_tran.detach().float().cpu().numpy().reshape(-1) - om_tran.reshape(-1))))
+        d_diff = float(np.max(np.abs(
+            pt_depth.detach().float().cpu().numpy().reshape(-1) - om_depth.reshape(-1))))
+        print(f'[verify-om] part1 tran_feat max_abs={tf_diff:.6f} depth max_abs={d_diff:.6f}')
+        if tf_diff > rtol or d_diff > atol:
+            raise RuntimeError(
+                f'part1 OM verify FAIL: tran_feat={tf_diff:.6f} depth={d_diff:.6f}')
+    finally:
+        acl.close()
+
+
 def _write_atc_script(work_dir, prefix, manifest, parallel_atc=True):
     script_path = os.path.join(work_dir, f'atc_convert_{prefix}.sh')
     p1 = manifest['onnx']['part1']
     p3 = manifest['onnx']['part3']
     bev = manifest['tensor_shapes']['bev_feat_nchw']
     img = manifest['tensor_shapes']['img']
-    soc = manifest.get('soc_version', 'Ascend910B3')
+    soc = manifest.get('soc_version', 'Ascend310B1')
+    p1_prec = manifest.get('atc_part1_precision', 'force_fp32')
+    p3_prec = manifest.get('atc_part3_precision', 'allow_fp32_to_fp16')
     p1_name = os.path.basename(p1)
     p3_name = os.path.basename(p3)
+    p1_flags = _atc_precision_flags(p1_prec, 'Softmax')
+    p3_flags = _atc_precision_flags(p3_prec)
     atc1 = f"""atc --model="${{WORK_DIR}}/{p1_name}" \\
     --framework=5 \\
     --output="${{WORK_DIR}}/{prefix}_part1" \\
     --input_format=NCHW \\
     --input_shape="img:{','.join(map(str, img))}" \\
     --soc_version="${{SOC_VERSION}}" \\
-    --precision_mode=allow_fp32_to_fp16"""
+    {p1_flags}"""
 
     atc3 = f"""atc --model="${{WORK_DIR}}/{p3_name}" \\
     --framework=5 \\
@@ -394,7 +503,7 @@ def _write_atc_script(work_dir, prefix, manifest, parallel_atc=True):
     --input_format=NCHW \\
     --input_shape="bev_feat:{','.join(map(str, bev))}" \\
     --soc_version="${{SOC_VERSION}}" \\
-    --precision_mode=allow_fp32_to_fp16"""
+    {p3_flags}"""
 
     if parallel_atc:
         atc_block = f"""# Part1 / Part3 OM builds run in parallel
@@ -480,12 +589,9 @@ def build_model_and_data(args, device=None):
     return model, data, device
 
 
-def _get_img_cpu(data):
+def _get_img_cpu(data, layout='eval'):
     inputs = data['img_inputs'][0]
-    img = inputs[0].squeeze(0).float().contiguous()
-    if img.shape[0] > 6:
-        img = img[:6]
-    return img
+    return _part1_img_from_tensor(inputs[0], layout=layout)
 
 
 def main():
@@ -500,7 +606,7 @@ def main():
     if args.export_on_cpu:
         print('CPU ONNX export mode: model/img stay on CPU; part3 uses dummy bev_feat shape')
         model, data, device = build_model_and_data(args, device=torch.device('cpu'))
-        img = _get_img_cpu(data)
+        img = _get_img_cpu(data, layout=args.part1_layout)
         bev_shape = (1, 64, 200, 200)
         if hasattr(model, 'img_view_transformer'):
             vt = model.img_view_transformer
@@ -508,8 +614,8 @@ def main():
             if getattr(vt, 'collapse_z', False):
                 bev_shape = (1, int(gs[2]) * int(gs[0]), int(gs[1]), int(gs[1]))
         bev_feat = torch.randn(bev_shape, dtype=torch.float32)
-        part1 = Part1ExportWrapper(model).eval()
-        part3 = Part3ExportWrapper(model).eval()
+        part1 = build_part1_wrapper(model, args.part1_layout).eval()
+        part3 = build_part3_wrapper(model).eval()
         output_names = ['occ_out_0']
         export_dev = int(args.export_devices.split(',')[0].strip())
         _export_onnx_sequential(
@@ -529,6 +635,10 @@ def main():
             manifest['onnx']['part3'] = part3_onnx
             manifest['notes'] = (
                 manifest.get('notes', '') + ' part1/part3 ONNX re-exported on CPU.')
+            manifest['part1_img_layout'] = args.part1_layout
+            manifest['soc_version'] = args.soc_version
+            manifest['atc_part1_precision'] = args.atc_part1_precision
+            manifest['atc_part3_precision'] = args.atc_part3_precision
         else:
             num_cam, d, fh, fw, c = _part1_spatial_shapes(model)
             manifest = {
@@ -550,7 +660,10 @@ def main():
                     'bev_feat_nchw': list(bev_feat.shape),
                     'occ_out_0': [1, 200, 200, 16, 18],
                 },
-                'soc_version': 'Ascend910B3',
+                'part1_img_layout': args.part1_layout,
+                'soc_version': args.soc_version,
+                'atc_part1_precision': args.atc_part1_precision,
+                'atc_part3_precision': args.atc_part3_precision,
             }
         _write_manifest(args.work_dir, prefix, manifest)
         _write_atc_script(args.work_dir, prefix, manifest, args.parallel_atc)
@@ -559,10 +672,10 @@ def main():
 
     model, data, device = build_model_and_data(args)
     img, ranks_bev, ranks_depth, ranks_feat = _get_bev_pool_metas_v3(
-        model, data, device)
+        model, data, device, layout=args.part1_layout)
 
-    part1 = Part1ExportWrapper(model).to(device).eval()
-    part3 = Part3ExportWrapper(model).to(device).eval()
+    part1 = build_part1_wrapper(model, args.part1_layout).to(device).eval()
+    part3 = build_part3_wrapper(model).to(device).eval()
 
     tran_feat, depth, depth_bev, feat_bev, bev_feat, outs_list = _run_split_forward(
         model, part1, part3, img, ranks_bev, ranks_depth, ranks_feat)

@@ -110,14 +110,15 @@ def parse_args():
 
 
 def decode_occ_logits(logits: np.ndarray, occ_shape: tuple) -> np.ndarray:
-    """Logits -> semantic grid (Gx, Gy, Z)."""
+    """Logits -> semantic grid (Gx, Gy, Z); matches get_occ_gpu (softmax + argmax)."""
     arr = np.asarray(logits, dtype=np.float32).reshape(occ_shape)
     if arr.ndim == 5:
-        pred = arr.argmax(axis=-1)[0]
+        score = arr[0]
     elif arr.ndim == 4:
-        pred = arr.argmax(axis=-1)
+        score = arr
     else:
         raise ValueError(f'unexpected occ logits ndim after reshape: {arr.ndim}')
+    pred = score.argmax(axis=-1)
     return pred.astype(np.int64)
 
 

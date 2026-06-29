@@ -46,6 +46,7 @@ except ImportError:
 sys.path.insert(0, os.getcwd())
 
 from tools.export_onnx_split_npu import (  # noqa: E402
+    Part1EvalAlignedExportWrapper,
     Part1ExportWrapper,
     Part3ExportWrapper,
     _get_sample_batch,
@@ -199,9 +200,17 @@ def testpy_full(model, img_inputs):
 # ---------------------------------------------------------------------------
 
 @torch.no_grad()
-def split_stage1(model_trt, img6):
+def split_stage1(model_trt, img):
+    """Legacy part1: (N,3,H,W) via forward_part1."""
     part1 = Part1ExportWrapper(model_trt).eval()
-    return part1(img6)
+    return part1(img)
+
+
+@torch.no_grad()
+def split_stage1_eval(model_trt, img_bn):
+    """Eval-aligned part1: (B,N,3,H,W) via image_encoder + depth_net."""
+    part1 = Part1EvalAlignedExportWrapper(model_trt).eval()
+    return part1(img_bn)
 
 
 @torch.no_grad()
@@ -253,6 +262,9 @@ def _run_testpy_reference(model_test, img_inputs):
     img6 = t_prepared[0].squeeze(0).float().contiguous().cpu()
     if img6.shape[0] > 6:
         img6 = img6[:6]
+    img_bn = t_prepared[0].float().contiguous().cpu()
+    if img_bn.shape[1] > 6:
+        img_bn = img_bn[:, :6]
     return {
         'tran_flat': t_tran_flat,
         'depth_flat': t_depth_flat,
@@ -260,6 +272,7 @@ def _run_testpy_reference(model_test, img_inputs):
         'occ': t_occ.cpu(),
         'full_occ': t_full.cpu(),
         'img6': img6,
+        'img_bn': img_bn,
         'prepared': [x.cpu() for x in t_prepared],
     }
 
@@ -299,6 +312,7 @@ def main():
         t.int().contiguous() for t in ranks_pack[:3]]
 
     img6 = ref['img6'].to(device)
+    img_bn = ref['img_bn'].to(device)
     t_tran_flat = ref['tran_flat']
     t_depth_flat = ref['depth_flat']
     t_bev = ref['bev'].to(device)
@@ -307,19 +321,23 @@ def main():
 
     # ----- Stage 1 -----
     print('\n--- Stage 1: image_encoder + depth_net (tran_feat, depth) ---')
-    s_tran_flat, s_depth_flat = split_stage1(model_split, img6)
-    _diff('testpy vs split-PyTorch tran_feat', t_tran_flat, s_tran_flat.cpu())
-    _diff('testpy vs split-PyTorch depth', t_depth_flat, s_depth_flat.cpu())
+    s_tran_flat, s_depth_flat = split_stage1_eval(model_split, img_bn)
+    _diff('testpy vs split-PyTorch(eval part1) tran_feat', t_tran_flat, s_tran_flat.cpu())
+    _diff('testpy vs split-PyTorch(eval part1) depth', t_depth_flat, s_depth_flat.cpu())
+
+    s_tran_legacy, s_depth_legacy = split_stage1(model_split, img6)
+    _diff('testpy vs split-PyTorch(legacy part1) tran_feat', t_tran_flat, s_tran_legacy.cpu())
+    _diff('testpy vs split-PyTorch(legacy part1) depth', t_depth_flat, s_depth_legacy.cpu())
 
     if args.check_onnx and os.path.isfile(part1_onnx):
-        o_tran, o_depth = _onnx_run(part1_onnx, img6.cpu().numpy())
+        o_tran, o_depth = _onnx_run(part1_onnx, img_bn.cpu().numpy())
         _diff('testpy vs part1-ONNX tran_feat', t_tran_flat, torch.from_numpy(o_tran))
         _diff('testpy vs part1-ONNX depth', t_depth_flat, torch.from_numpy(o_depth))
 
     if args.check_om and os.path.isfile(part1_om):
         acl = AclSession(device_id=args.gpu_id)
         acl.load('part1', part1_om)
-        o_tran, o_depth = acl.infer('part1', img6.cpu().numpy())
+        o_tran, o_depth = acl.infer('part1', img_bn.cpu().numpy())
         acl.close()
         _diff('testpy vs part1-OM tran_feat', t_tran_flat, torch.from_numpy(o_tran))
         _diff('testpy vs part1-OM depth', t_depth_flat, torch.from_numpy(o_depth))

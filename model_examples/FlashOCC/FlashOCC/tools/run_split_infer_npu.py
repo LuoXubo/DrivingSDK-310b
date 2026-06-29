@@ -46,9 +46,12 @@ from tools.export_onnx_split_npu import (  # noqa: E402
     _get_bev_pool_metas_v3,
     _get_sample_batch,
     _import_plugin,
+    _part1_img_from_tensor,
     _part1_to_bev_pool_inputs,
     _run_split_forward,
     _to_device,
+    build_part1_wrapper,
+    part1_layout_from_manifest,
     run_bev_pool_v3,
 )
 
@@ -328,18 +331,17 @@ def _save_profile_report(path, report):
     print(f'profile report saved: {abspath}')
 
 
-def _load_img_and_ranks(model, data, device, meta_npz, use_cached_ranks):
+def _load_img_and_ranks(model, data, device, meta_npz, use_cached_ranks,
+                        layout='eval'):
     inputs = _to_device(data['img_inputs'][0], device)
-    img = inputs[0].squeeze(0).float().contiguous()
-    if img.shape[0] > 6:
-        img = img[:6]
+    img = _part1_img_from_tensor(inputs[0], layout=layout)
     if use_cached_ranks and os.path.isfile(meta_npz):
         meta = np.load(meta_npz)
         ranks_bev = torch.from_numpy(meta['ranks_bev']).int().to(device)
         ranks_depth = torch.from_numpy(meta['ranks_depth']).int().to(device)
         ranks_feat = torch.from_numpy(meta['ranks_feat']).int().to(device)
         return img, ranks_bev.contiguous(), ranks_depth.contiguous(), ranks_feat.contiguous()
-    return _get_bev_pool_metas_v3(model, data, device)
+    return _get_bev_pool_metas_v3(model, data, device, layout=layout)
 
 
 def _resolve_om_paths(manifest_path, work_dir_override):
@@ -419,17 +421,25 @@ def _compare_occ(ref, test, name='occ'):
 
 
 def run_om_pipeline(acl_sess, part1, part3, model, img, ranks_bev, ranks_depth,
-                      ranks_feat, device, timer=None):
-    """part1.om -> bev_pool_v3 -> part3.om."""
+                      ranks_feat, device, timer=None, data=None, bev_mode='vt_core'):
+    """part1.om -> bev (vt_core or bev_pool_v3) -> part3.om."""
+    from tools.split_deploy_infer import run_bev_view_transform_core
+
+    def _bev_from_part1(tran_feat, depth):
+        if bev_mode == 'vt_core' and data is not None:
+            return run_bev_view_transform_core(
+                model, data, img, tran_feat, depth, device)
+        depth_bev, feat_bev = _part1_to_bev_pool_inputs(
+            tran_feat, depth, model.img_view_transformer)
+        return run_bev_pool_v3(
+            model, depth_bev, feat_bev, ranks_bev, ranks_depth, ranks_feat)
+
     if timer is None:
         img_np = img.detach().cpu().numpy()
         tran_flat, depth_flat = acl_sess.infer('part1', img_np)
         tran_feat = torch.from_numpy(tran_flat).to(device)
         depth = torch.from_numpy(depth_flat).to(device)
-        depth_bev, feat_bev = _part1_to_bev_pool_inputs(
-            tran_feat, depth, model.img_view_transformer)
-        bev_feat = run_bev_pool_v3(
-            model, depth_bev, feat_bev, ranks_bev, ranks_depth, ranks_feat)
+        bev_feat = _bev_from_part1(tran_feat, depth)
         bev_np = bev_feat.detach().cpu().numpy()
         occ_list = acl_sess.infer('part3', bev_np)
         return occ_list[0], bev_feat
@@ -441,12 +451,8 @@ def run_om_pipeline(acl_sess, part1, part3, model, img, ranks_bev, ranks_depth,
             tran_flat, depth_flat = acl_sess.infer('part1', img_np)
         tran_feat = torch.from_numpy(tran_flat).to(device)
         depth = torch.from_numpy(depth_flat).to(device)
-        with timer.measure('part1_to_bevpool'):
-            depth_bev, feat_bev = _part1_to_bev_pool_inputs(
-                tran_feat, depth, model.img_view_transformer)
-        with timer.measure('bev_pool_v3'):
-            bev_feat = run_bev_pool_v3(
-                model, depth_bev, feat_bev, ranks_bev, ranks_depth, ranks_feat)
+        with timer.measure('bev_stage'):
+            bev_feat = _bev_from_part1(tran_feat, depth)
         with timer.measure('bev_to_host'):
             bev_np = bev_feat.detach().cpu().numpy()
         with timer.measure('part3_om'):
@@ -506,7 +512,8 @@ def main():
         print(f'bev_pool meta (optional): {meta_npz}')
 
     model, data_loader, device = _build_model_and_loader(args)
-    part1 = Part1ExportWrapper(model).eval()
+    part1_layout = part1_layout_from_manifest(manifest)
+    part1 = build_part1_wrapper(model, part1_layout).eval()
     part3 = Part3ExportWrapper(model).eval()
 
     # Pre-fetch tensors before ACL context (torch_npu + extra acl context can clash).
@@ -516,7 +523,7 @@ def main():
         idx = si if args.samples > 1 else args.sample_idx
         data = _get_sample_batch(data_loader, idx)
         img, ranks_bev, ranks_depth, ranks_feat = _load_img_and_ranks(
-            model, data, device, meta_npz, args.use_cached_ranks)
+            model, data, device, meta_npz, args.use_cached_ranks, part1_layout)
         sample_batches.append((img, ranks_bev, ranks_depth, ranks_feat))
 
     acl_sess = AclSession(device_id=args.gpu_id)

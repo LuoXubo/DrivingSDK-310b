@@ -24,6 +24,53 @@ def bev_pool_v3_cpu_reference(depth, feat, ranks_depth, ranks_feat, ranks_bev,
     return out.permute(0, 4, 1, 2, 3).contiguous()
 
 
+def bev_pool_v3_segment_sum_export(depth, feat, ranks_depth, ranks_feat, ranks_bev,
+                                   b, d, h, w, c):
+    """ONNX-traceable BEV pool matching index_add_ via sort + segment cumsum."""
+    depth_flat = depth.reshape(-1)
+    feat_flat = feat.reshape(-1, c)
+    rd = ranks_depth.long()
+    rf = ranks_feat.long()
+    rb = ranks_bev.long()
+    weighted = (feat_flat.index_select(0, rf)
+                * depth_flat.index_select(0, rd).unsqueeze(-1))
+
+    n = int(rb.numel())
+    bev_slots = b * d * h * w
+    out_flat = weighted.new_zeros(bev_slots, c)
+    if n == 0:
+        out = out_flat.view(b, d, h, w, c)
+        return out.permute(0, 4, 1, 2, 3).contiguous()
+
+    sort_idx = torch.argsort(rb)
+    rb_sorted = rb[sort_idx]
+    w_sorted = weighted[sort_idx]
+
+    cumsum = torch.cumsum(w_sorted, dim=0)
+    seg_end = torch.cat([
+        rb_sorted[1:] != rb_sorted[:-1],
+        w_sorted.new_ones(1, dtype=torch.bool),
+    ])
+    seg_start = torch.cat([
+        w_sorted.new_ones(1, dtype=torch.bool),
+        rb_sorted[1:] != rb_sorted[:-1],
+    ])
+    end_idx = seg_end.nonzero(as_tuple=False).squeeze(-1)
+    start_idx = seg_start.nonzero(as_tuple=False).squeeze(-1)
+
+    end_vals = cumsum[end_idx]
+    start_vals = torch.zeros_like(end_vals)
+    if start_idx.numel() > 1:
+        start_vals[1:] = cumsum[start_idx[1:] - 1]
+
+    seg_sums = end_vals - start_vals
+    unique_rb = rb_sorted[end_idx]
+    out_flat = out_flat.scatter_add(
+        0, unique_rb.unsqueeze(1).expand(-1, c), seg_sums)
+    out = out_flat.view(b, d, h, w, c)
+    return out.permute(0, 4, 1, 2, 3).contiguous()
+
+
 class OnnxBEVPoolV3(torch.autograd.Function):
     """Custom ONNX op for BEVPoolV3; attrs match CANN op definition."""
 

@@ -82,12 +82,10 @@ def _resolve_e2e_om(manifest, manifest_path, override):
     raise FileNotFoundError('Cannot resolve e2e OM path; pass --om-path')
 
 
-def _img_from_data(data):
+def _img_from_data(data, layout='eval'):
+    from tools.export_onnx_split_npu import _part1_img_from_tensor
     inputs = _to_device(data['img_inputs'][0], torch.device('cpu'))
-    img = inputs[0].squeeze(0).float().contiguous()
-    if img.shape[0] > 6:
-        img = img[:6]
-    return img.numpy()
+    return _part1_img_from_tensor(inputs[0], layout=layout).numpy()
 
 
 def main():
@@ -111,7 +109,9 @@ def main():
         dataset, samples_per_gpu=1, workers_per_gpu=0, dist=False, shuffle=False)
 
     occ_shape = tuple(manifest.get('tensor_shapes', {}).get('occ_out_0', (-1,)))
-    print(f'e2e OM: {om_path}')
+    from tools.export_onnx_split_npu import part1_layout_from_manifest
+    part1_layout = part1_layout_from_manifest(manifest)
+    print(f'e2e OM: {om_path} (part1 img layout={part1_layout})')
 
     acl_sess = AclSession(device_id=args.gpu_id)
     acl_sess.load('e2e', om_path)
@@ -121,7 +121,7 @@ def main():
         for si in range(n):
             idx = args.sample_idx + si
             data = _get_sample_batch(data_loader, idx)
-            img_np = _img_from_data(data)
+            img_np = _img_from_data(data, layout=part1_layout)
             if first_img is None:
                 first_img = img_np
             occ = acl_sess.infer('e2e', img_np)[0]
